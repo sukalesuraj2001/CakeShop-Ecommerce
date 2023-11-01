@@ -1,0 +1,403 @@
+/* Add this CSS to your component's CSS file or a global stylesheet */
+
+.example-button-row {
+    display: flex;
+    align-items: center;
+  
+    margin-left: 30rem;
+    margin-top: -2rem;
+  }
+  
+  .button {
+    margin: 0 5px;
+   
+  }
+  
+  .count {
+    text-align: center;
+  }
+  
+  img {
+    width: 200px;
+  }
+  
+  .container-with-space {
+    margin-left: 300px;
+    /* border: 2px solid black; */
+    /* margin-right: 250px; */
+    width: 80%;
+  }
+  
+  .content {
+    padding: 20px;
+    width: 50%;
+  }
+  
+  .content .customer {
+    border: 0.1px solid rgb(187, 184, 184);
+    border-radius: 4px;
+    padding: 10px;
+    line-height: 0.6rem;
+    width: 100%;
+  }
+  
+  .content .customer p {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  
+  .customer p {
+    font-size: 10px;
+    line-height: 5px;
+    margin: 0; 
+    font-family: Assistant,Helvetica,Arial,sans-serif!important;
+  }
+  
+  
+  
+  .col-md-4 {
+    width: 30%;
+    border: 0.1px solid rgb(187, 184, 184);
+    margin-top: -1rem;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .selected-items {
+    flex: 1;
+  }
+  
+  .vertical-line {
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    /* margin-right: 10px; */
+    margin-top: -1rem;
+  }
+  
+  .form-check .button-container p {
+    font-size: 13px;
+  }
+  
+  .product-details {
+    display: flex;
+    align-items: flex-start;
+    border: 0.1px solid rgb(187, 184, 184);
+    margin: 0;
+  
+  }
+  
+  .img {
+  
+    flex: 1;
+  }
+  
+  .product-detail {
+  
+    flex: 1;
+  }
+  
+  .product-detail p {
+    line-height: 1rem;
+    font-size: 14px;
+  }
+  
+  .product-detail span {
+    float: right;
+    font-size: 1.8rem;
+  }
+  
+  
+  
+  .coupon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .coupon-section {
+  
+    flex: 1;
+  }
+  
+  .apply-btn {
+  
+    flex: 1;
+  }
+  
+  .coupon-container span {
+    font-size: 1.5rem;
+  }
+  
+  .coupon-container p {
+    font-size: 1rem;
+    /* margin-top: -1rem; */
+  
+  }
+  
+  .apply-btn button {
+    float: right;
+    border: 0.5px solid rgb(255, 63, 108);
+    font-size: 12px;
+    color: rgb(255, 63, 108);
+  }
+  
+  .price-details p {
+    font-size: 14px;
+    color: #282c3f;
+    font-family: Assistant, Helvetica, Arial, sans-serif !important;
+  }
+  
+  #btn {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 2px;
+    border-width: 0px;
+    padding: 10px 16px;
+    background-color: rgb(255, 63, 108);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  span {
+    cursor: pointer;
+  }
+  
+  
+  .check {
+    -webkit-appearance: none;
+    /* height: 20px; */
+    /* width: 20px; */
+    position: relative;
+    top: 28px;
+    left: 15px;
+    transition: 0.10s;
+    background-color: white;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+  }
+  .checks{
+    top: 20px;
+    left: 20px;
+    transition: 0.10s;
+    background-color: white;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+  }
+  .checks:checked{
+  
+    background-color:rgb(255, 63, 108);
+  }
+  
+  .checks:hover {
+    cursor: pointer; 
+    opacity: 0.8;
+  }
+  .check:checked {
+    background-color:rgb(255, 63, 108);
+  }
+  
+  
+  
+  
+  .check:hover {
+    cursor: pointer; 
+    opacity: 0.8;
+  }
+  .totalmrp{
+    float: right;
+  }
+  
+  .btn-group{
+    background-color: white;
+  }
+  .btn{
+    border: none;
+  }
+  
+  
+  
+  .size-chart {
+    display: flex;
+    gap: 5px; 
+  }
+  
+  .size-chart span {
+    display: inline-block;
+    width: 20px; 
+    height: 20px; 
+    background-color: white; 
+    color: black; 
+    text-align: center;
+    /* line-height: 40px; */
+    border-radius: 20%;
+    cursor: pointer;
+    border: 0.1px solid grey;
+    font-size: 14px;
+  }
+  
+  .size-chart span:hover {
+    border: 0.1px solid red;
+  }
+  
+  
+  
+  /* qty section */
+  
+  .qty {
+    display: flex;
+    align-items: center;
+  }
+  .qty p {
+    background-color: rgb(255, 63, 108);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 10%; /* Add border-radius here */
+  }
+  
+  .quantity-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .count {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .delivery-charge p{
+    font-size: 12px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+  
+    .example-button-row {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      margin-top: -2rem;
+    }
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .container-with-space {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .col-md-4 {
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  
+    .content .customer {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .customer p {
+      font-size: 12px;
+      line-height: 1.2rem;
+    }
+  
+    .product-detail p {
+      font-size: 12px;
+      line-height: 1.2rem;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .button-container p {
+      font-size: 12px;
+    }
+  
+    .vertical-line {
+      display: none;
+    }
+  
+    .apply-btn button {
+      font-size: 12px;
+    }
+  
+    .price-details p {
+      font-size: 12px;
+    }
+  
+    #btn {
+      font-size: 14px;
+    }
+  
+    .check,
+    .checks {
+      top: 10px;
+      left: 5px;
+      font-size: 12px;
+    }
+  
+    .size-chart span {
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+    }
+    
+    .size-chart span:hover {
+      border: 0.1px solid red;
+    }
+  
+    .count {
+      width: 30px;
+      height: 20px;
+      font-size: 14px;
+    }
+  
+    .qty p {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+  
+    .quantity-button {
+      font-size: 16px;
+    }
+  }
+  
+  

@@ -1,0 +1,111 @@
+
+.container-fluid {
+    display: flex;
+    align-items: flex-start;
+}
+
+.filter {
+    width: 18%;
+    padding: 20px;
+    /* background: #f0f0f0; */
+}
+
+.products {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.product-card {
+    width: 19%;
+    margin-bottom: 20px;
+    background: #ffffff;
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    /* text-align: center; */
+}
+.product-card p {
+  line-height: 1rem;
+  margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+
+.product-card img {
+    max-width: 100%;
+   
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.button p {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.clear{
+  color: rgb(255, 63, 108);
+  cursor: pointer;
+}
+
+
+.form-check ,label ,input{
+margin: 0;
+padding: 0;
+font-weight: 400;
+font-size: 14px;
+font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+.price{
+  margin: 0;
+  padding: 0;
+}
+.desc{
+  color: #535766;
+  font-size: 14px;
+}
+.name{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  color: #282c3f;
+}
+.amount{
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+}
+.apparel h4{
+  font-size: 17px;
+}
+
+.form-check-input[type="radio"]:checked  {
+  border-color:   rgb(255, 63, 108) !important; 
+  background-color: rgb(255, 63, 108) !important;
+}
+.container-fluid {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .filter {
+    width: 18%;
+    padding: 20px;
+  }
+  
+  .products {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+
+  

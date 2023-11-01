@@ -1,0 +1,122 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<div class="container container-with-space">
+  <div class="row">
+    <div class="col-md-8  content">
+      <div class="customer">
+        <p>Deliver to : <b>Username</b> </p>
+        <p class="address">Address</p>
+      </div>
+      <div class="customer mt-1">
+        <p class="fw-bold">Available Offers </p>
+        <p>10% instant discount on ICICI Bank Credit and Debit Card on a minimum spend of Rs.3500.TCA</p>
+        <div class="container">
+
+          <p type="button" class="text-danger" (click)="toggleCollapse()">Show more</p>
+          <div [ngClass]="{'collapse': isCollapsed, 'show': !isCollapsed}">
+            <p>10% instant discount on ICICI Bank Credit and Debit Card on a minimum spend of Rs.3500.TCA</p>
+            <p>10% instant discount on ICICI Bank Credit and Debit Card on a minimum spend of Rs.3500.TCA</p>
+            <p>10% instant discount on ICICI Bank Credit and Debit Card on a minimum spend of Rs.3500.TCA</p>
+            <p>10% instant discount on ICICI Bank Credit and Debit Card on a minimum spend of Rs.3500.TCA</p>
+            <p>10% instant discount on ICICI Bank Credit and Debit Card on a minimum spend of Rs.3500.TCA</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-check mt-3">
+        <input class="form-check-input fw-bold  checks" type="checkbox" [(ngModel)]="selectAllItems" id="selectAllItems"
+        (change)="selectAllItemsChanged()" >
+
+        <div class="button-container">
+          <p class="selected-items  fw-bold">{{selectedItemCount}}/{{counter}} ITEM SELECTED</p>
+          <!-- <p>REMOVE</p>
+          <div class="vertical-line"></div>
+          <p>MOVE TO WISHLIST</p> -->
+        </div>
+      </div>
+      <div class="product-details my-2" *ngFor="let item of cartItems">
+        <div class="img ">
+          <input class="form-check-input  check" type="checkbox"  [(ngModel)]="item.selected" id="item_{{item.id}}"
+          (change)="checkItem(item)" >
+
+
+
+          <img [src]="item.images" class="img-thumbnail ms-1 mb-3" alt="...">
+        </div>
+        <div class="product-detail mt-4 ms-3">
+          <p class="fw-bold">{{item.productName}}</p>
+          <p></p>
+
+          <div class="qty">
+            <p href="#" class="text-decoration-none" (click)="decrease(item)">-</p>
+            <input type="text" class="count" [(ngModel)]="item.qty">
+            <p href="#" class="text-decoration-none"  (click)="increase(item)">+</p>
+           </div>
+
+
+
+
+
+          <p>size: {{item.size}}kg</p>
+          <p>{{item.price | currency:"INR"}}</p>
+          <!-- <p>Total Price: {{ item.totalprice*item.qty | currency :"INR" }}</p> -->
+        </div>
+        <div class="product-detail me-3">
+          <span ><i class="bi bi-x" (click)="remove(item)"></i></span>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="col-md-4 ">
+      <h5 class="mt-3">Coupon</h5>
+      <div class="coupon-container">
+        <div class="coupon-section">
+          <div class="d-flex align-items-center">
+            <p class="mt-1">
+              <span class="me-3 mt-1"><i class="bi bi-tag mt-3"></i></span>
+
+            </p>
+            <p>Apply Coupon</p>
+          </div>
+        </div>
+        <div class="apply-btn">
+          <button type="submit" class="btn ">APPLY</button>
+        </div>
+      </div>
+      <hr>
+      <div class="price-details">
+        <p class="fw-bold">PRICE DETAILS(1 item)</p>
+        <p>Total MRP:&nbsp;<b class="totalmrp">{{totalmrp | currency:"INR"}}</b> </p>
+        <p>Discount On MRP: <b class="totalmrp text-success fw-bold">{{totalmrp*(discount/100) |currency:"INR"}}</b> </p>
+        <!-- <p>Shipping Charges: <b class="totalmrp text-danger fw-bold">{{shipping | currency:"INR"}}</b></p> -->
+        <hr>
+        <div class="delivery-charge">
+            <p>Delivery Charges Are Included In Total Amount</p>
+
+         </div>
+        <p>Total Amount: <b class="totalmrp fw-bold">{{(totalmrp -(totalmrp*(discount/100)) + shipping) | currency: "INR"}}</b></p>
+        
+
+      </div>
+      <button type="submit" id="btn" >PLACE ORDER</button>
+    </div>
+
+
+  </div>
+</div>

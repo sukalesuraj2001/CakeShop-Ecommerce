@@ -1,0 +1,327 @@
+{
+  "User": [
+    {
+      "firstName": "Suraj",
+      "lastName": "Sukale",
+      "email": "srsukale20@gmail.com",
+      "password": "Suraj@2001",
+      "id": 1
+    }
+  ],
+  "Products": [
+    {
+      "productName": "Decorated Chocolate Truffle Cake Half Kg",
+      "price": 1500,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_2.jpg",
+      "categoryName": "Same Day Delivery Cakes",
+      "delivery": "Same Day Delivery Cakes",
+      "categoryId": 14,
+      "id": 1,
+      "qty": 1,
+      "totalprice": 1500
+    },
+    {
+      "productName": "Chocolate Caramel Fudge Cake Half Kg",
+      "price": 599,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221205145728/chocolate-caramel-fudge-cake-half-kg_1.jpg",
+      "categoryName": "Same Day Delivery Cakes",
+      "delivery": "Same Day Delivery",
+      "categoryId": 14,
+      "id": 2,
+      "qty": 1,
+      "totalprice": 599
+    },
+    {
+      "productName": "Chocolate Truffle Delicious Cake Half Kg",
+      "price": 559,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221214145641/chocolate-truffle-cream-cake-half-kg_1.jpg",
+      "categoryName": "Midnight Delivery Cakes",
+      "delivery": "Midnight Delivery Cakes",
+      "categoryId": 15,
+      "id": 3,
+      "qty": 1,
+      "totalprice": 599
+    },
+    {
+      "productName": "Chocolate Cream Cake Half kg",
+      "price": 569,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221118132140/chocolate-cream-cake-half-kg_1.jpg",
+      "categoryName": "Midnight Delivery Cakes",
+      "delivery": "Midnight Delivery Cakes",
+      "categoryId": 15,
+      "id": 4,
+      "qty": 1,
+      "totalprice": 569
+    },
+    {
+      "productName": "Decorated Chocolate Truffle Cake Half Kg",
+      "price": 859,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/m/v20221221115007/decorated-chocolate-truffle-cake-half-kg.jpg",
+      "categoryName": "Best Seller Cakes",
+      "delivery": "Best Seller Cakes",
+      "categoryId": 16,
+      "id": 5,
+      "qty": 1,
+      "totalprice": 859
+    },
+    {
+      "productName": "Chocolate Truffle Delicious Cake Half Kg",
+      "price": 759,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221214145641/chocolate-truffle-cream-cake-half-kg_1.jpg",
+      "categoryName": "Best Seller Cakes",
+      "delivery": "Best Seller Cakes",
+      "categoryId": 16,
+      "id": 6,
+      "qty": 1,
+      "totalprice": 759
+    },
+    {
+      "productName": "Crunchy Butterscotch Cream Cake- Half Kg",
+      "price": 459,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/m/v20230928124525/crunchy-butterscotch-delight-cake-half-kg.jpg",
+      "categoryName": "Brand New Cakes",
+      "delivery": "Brand New Cakes",
+      "categoryId": 17,
+      "id": 7,
+      "qty": 1,
+      "totalprice": 459
+    },
+    {
+      "productName": "Dark Chocolate Truffle Bliss- Half Kg",
+      "price": 859,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/m/v20230928124536/dark-chocolate-truffle-bliss-half-kg.jpg",
+      "categoryName": "Brand New Cakes",
+      "delivery": "Brand New Cakes",
+      "categoryId": 17,
+      "id": 8,
+      "qty": 1,
+      "totalprice": 859
+    },
+    {
+      "productName": "Heavenly Butterscotch Cream Cake- Half Kg Eggless",
+      "price": 559,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221118132238/heavenly-butterscotch-cream-cake-half-kg-eggless_1.jpg",
+      "categoryName": "Birthday Cake",
+      "delivery": "Birthday Cake",
+      "categoryId": 18,
+      "id": 9,
+      "qty": 1,
+      "totalprice": 559
+    },
+    {
+      "productName": "Fruit Overload Cake- Half Kg Eggless",
+      "price": 659,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20230926071759/fruit-overload-cake-half-kg-eggless_1.jpg",
+      "categoryName": "Birthday Cake",
+      "delivery": "Birthday Cake",
+      "categoryId": 18,
+      "id": 10,
+      "qty": 1,
+      "totalprice": 659
+    },
+    {
+      "productName": "Kit Kat Crunch Cream Cake- Half Kg",
+      "price": 559,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20230928124339/kit-kat-crunch-cream-cake-half-kg_1.jpg",
+      "categoryName": "Birthday Cake",
+      "delivery": "Birthday Cake",
+      "categoryId": 18,
+      "id": 11,
+      "qty": 1,
+      "totalprice": 559
+    },
+    {
+      "productName": "Chocolate Caramel Fudge Cake Half Kg",
+      "price": 599,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/m/v20221205145728/chocolate-caramel-fudge-cake-half-kg.jpg",
+      "categoryName": "Aniversary Cake",
+      "delivery": "Aniversary Cake",
+      "categoryId": 19,
+      "id": 12,
+      "qty": 1,
+      "totalprice": 559
+    },
+    {
+      "productName": "Fudge Brownie Cake Half kg",
+      "price": 649,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/m/v20221205145945/fudge-brownie-cake-half-kg.jpg",
+      "categoryName": "Aniversary Cake",
+      "delivery": "Aniversary Cake",
+      "categoryId": 19,
+      "id": 13,
+      "qty": 1,
+      "totalprice": 649
+    },
+    {
+      "productName": "Fudge Brownie Cake Half kg",
+      "price": 809,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Chocolate-Cakes-web_2.jpg",
+      "categoryName": "Chocolate Cake",
+      "delivery": "Chocolate Cake",
+      "categoryId": 20,
+      "id": 14,
+      "qty": 1,
+      "totalprice": 869
+    },
+    {
+      "productName": "Decorated Chocolate Truffle Cake Half Kg",
+      "price": 509,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_1.jpg",
+      "categoryName": "Chocolate Cake",
+      "delivery": "Chocolate Cake",
+      "categoryId": 20,
+      "id": 15,
+      "qty": 1,
+      "totalprice": 509
+    }
+  ],
+  "Cakebycategory": [
+    {
+      "categoryId": 14,
+      "categoryName": "sameday",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/cakes_delivery/Same-Day_Web.jpg"
+    },
+    {
+      "categoryId": 15,
+      "categoryName": "midnight",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/cakes_delivery/Midnight-Delivery_Web.jpg"
+    },
+    {
+      "categoryId": 16,
+      "categoryName": "bestseller",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/cakes_delivery/Bestseller_Web.jpg"
+    },
+    {
+      "categoryId": 17,
+      "categoryName": "brandnew",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/cakes_delivery/New-Arrival_Web.jpg"
+    }
+  ],
+  "Ocassions": [
+    {
+      "categoryId": 18,
+      "categoryName": "birthday",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/special_occasion/Birthday_web.jpg"
+    },
+    {
+      "categoryId": 19,
+      "categoryName": "aniversary",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/special_occasion/Anniversary_web.jpg"
+    }
+  ],
+  "Flovour": [
+    {
+      "categoryId": 20,
+      "categoryName": "Chocolate Cake",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Chocolate-Cakes-web_2.jpg"
+    },
+    {
+      "categoryId": 21,
+      "categoryName": "Black Forest Cake",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Black-Forest-Cakes_web.jpg"
+    },
+    {
+      "categoryId": 22,
+      "categoryName": "Butterscotch Cakes",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Butterscotch-Cakes_web.jpg"
+    },
+    {
+      "categoryId": 23,
+      "categoryName": "Pineapple Cake",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Pineapple-Cakes_web.jpg"
+    },
+    {
+      "categoryId": 24,
+      "categoryName": "Vanila Cake",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Black-Forest-Cakes_web.jpg"
+    },
+    {
+      "categoryId": 25,
+      "categoryName": "Truffle Cake",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Truffle-Cakes_web.jpg"
+    },
+    {
+      "categoryId": 26,
+      "categoryName": "Velvet Cake",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Red-Velvet-Cakes_web.jpg"
+    },
+    {
+      "categoryId": 27,
+      "categoryName": "Fruit Cake",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Fresh-Fruit-Cakes_web.jpg"
+    }
+  ],
+  "Price": [
+    {
+      "categoryId": 28,
+      "categoryName": "lowprice",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/999_web.jpg"
+    },
+    {
+      "categoryId": 29,
+      "categoryName": "mediumprice",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/1499_web.jpg"
+    },
+    {
+      "categoryId": 30,
+      "categoryName": "highprice",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/1999_web.jpg"
+    }
+  ],
+  "Color": [
+    {
+      "categoryId": 31,
+      "categoryName": "Brown",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/pick_a_color/Brown_web.jpg"
+    },
+    {
+      "categoryId": 32,
+      "categoryName": "Red",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/pick_a_color/Red_web.jpg"
+    },
+    {
+      "categoryId": 33,
+      "categoryName": "Blue",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/pick_a_color/Blue_web.jpg"
+    },
+    {
+      "categoryId": 34,
+      "categoryName": "White",
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/pick_a_color/White_web.jpg"
+    }
+  ],
+  "Cart": [
+    {
+      "productName": "Chocolate Caramel Fudge Cake Half Kg",
+      "price": 599,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221205145728/chocolate-caramel-fudge-cake-half-kg_1.jpg",
+      "categoryName": "Same Day Delivery Cakes",
+      "delivery": "Same Day Delivery",
+      "categoryId": 14,
+      "id": 2,
+      "qty": 1,
+      "totalprice": 599,
+      "size": 1,
+      "date": "2023-11-14",
+      "address": "Address: Pune, 411011, Pune, Maharashtra, India",
+      "userId": "1"
+    }
+  ],
+  "profile": []
+}

@@ -1,0 +1,255 @@
+*{
+
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  
+  
+  
+  img {
+  
+    transition: transform 0.2s;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+  }
+  /* .red-heart .bi-heart {
+    background-color: red;
+    border-radius: 60%;
+  } */
+  
+  
+  .card-img-top {
+    height: 40vh;
+    width: 17rem;
+  }
+  .col-md-6 h3{
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  .col-md-6 .text {
+    color: #535665;
+    padding: 5px 20px 14px 0;
+    font-size: 20px;
+    opacity: .8;
+    font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  .delivery-estimate p{
+    color: #535665;
+    padding: 5px 20px 14px 0;
+    /* font-size: 20px; */
+    opacity: 1;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    padding: 5px;
+    width: 15rem;
+  }
+  .search-icon{
+    margin-left: -2rem;
+  }
+  
+  .delivery-estimate p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 10px;
+  
+  }
+  input[type="text"] {
+    border: none;
+    flex: 1;
+    padding: 5px;
+    outline: none;
+  }
+  
+  .search-icon {
+    cursor: pointer;
+  }
+  
+  .col-4 span{
+    font-weight: 700;
+  }
+  .speciality{
+    font-size: 16px;
+    color: #282c3f;
+  }
+  
+  
+  .size-chart {
+    display: flex;
+    gap: 5px;
+    /* Adjust the gap as needed */
+  }
+  
+  .size-chart span {
+    display: inline-block;
+    width: 40px;
+    /* Adjust the width to control the circle size */
+    height: 40px;
+    /* Same as width to create a circle */
+    background-color: white;
+    /* Background color for the circle */
+    color: black;
+    /* Text color */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    /* Make it circular */
+    cursor: pointer;
+    border: 0.1px solid grey;
+  }
+  
+  .size-chart span:hover {
+    border: 0.1px solid red;
+  }
+  
+  a.myntra-button {
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: row;
+    width: 12rem;
+    /* Adjust the width as needed */
+    height: 3rem;
+    background-color: rgb(255, 62, 108);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: background-color 0.2s;
+    /* Add a transition effect */
+  }
+  
+  a.myntra-button:hover {
+    background-color: #e6325f;
+  }
+  
+  /* Adjust the padding and margin as needed */
+  a.myntra-button span {
+    margin-right: 1rem;
+    font-size: 20px;
+    /* Adjust the icon size */
+  }
+  
+  /* Optional: Add box-shadow on hover for a material effect */
+  a.myntra-button:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #whishlist {
+    border: 0.1px solid rgb(45, 43, 43);
+  }
+  
+  
+  
+  .delivery-option p {
+    font-size: 16px;
+  }
+  
+  
+  .delivery-option i {
+    font-size: 16px;
+  }
+  
+  input[type="text"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  .date-container input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 0.2rem;
+
+  } 
+  
+  input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  .text-delivery {
+    font-size: 0.1rem;
+  }
+  
+  .best-price {
+    color: #ff905a;
+  }
+  
+  .card-body h5 {
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    /* Add your responsive styles here */
+    .col-md-6 h3 {
+      font-size: 24px; 
+    }
+  
+    .col-md-6 .text {
+      font-size: 16px; 
+    }
+  
+    .size-chart span {
+      width: 30px; 
+      height: 30px;
+   
+      font-size: 12px;
+    }
+    .input-container {
+        display: flex;
+        align-items: center;
+      }
+      
+      .search-container,
+      .date-container {
+        margin-right: 10px; /* Adjust the margin as needed to create spacing between the two input elements */
+      }
+
+    
+      
+  
+    .myntra-button {
+      display: flex;
+      flex-direction: column; /* Change flex direction to column */
+      width: 12rem;
+      height: 3rem;
+      background-color: rgb(255, 62, 108);
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      line-height: 2rem;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 400;
+      transition: background-color 0.2s;
+    }
+  }
+  
+  

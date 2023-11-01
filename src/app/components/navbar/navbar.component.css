@@ -1,0 +1,136 @@
+/* Navbar styles */
+.navbar {
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    /* position: relative; */
+    /* position: fixed; */
+  }
+  
+  #logo {
+    cursor: pointer;
+  }
+  
+  /* Styles for the hoverable dropdown */
+  .nav-item.dropdown:hover .dropdown-menu,
+  .hover-dropdown .dropdown-menu {
+    display: block;
+  }
+  
+  .nav-item.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 0;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+    width: 60rem;
+  }
+  
+  .nav-item.dropdown .dropdown-menu a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .nav-item.dropdown .dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .nav-item.dropdown .dropdown-menu .dropdown-divider {
+    margin: 0.5rem 0;
+    border-color: #ddd;
+  }
+  
+  #studio {
+    width: 40rem;
+    left: -15rem;
+  }
+  
+  #btn {
+    margin-left: 15rem;
+    width: 9rem;
+    border: 0.1px solid black;
+  }
+  
+  li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaa;
+    padding: 20px;
+  }
+  
+  #search-box {
+    width: 26rem;
+    margin-top: 1rem;
+    height: 2.5rem;
+  }
+  
+  #kids {
+    color: rgb(237, 111, 56);
+  }
+  
+  i {
+    font-size: 20px;
+    margin-left: 10px;
+    border: none;
+  }
+  
+  .icon-txt {
+    margin-left: 10px;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  
+  .badge {
+    font-size: 12px;
+    padding: 4px 8px;
+    top: -8px;
+  }
+  #profile li{
+   margin-bottom: -1.2rem;
+  }
+  #profile{
+    margin-left: -2rem;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .navbar {
+      padding: 10px; /* Adjust the padding as needed */
+    }
+  
+    .nav-item.dropdown .dropdown-menu {
+      width: auto;
+      left: 0;
+    }
+  
+    #studio {
+      width: auto;
+      left: 0;
+    }
+  
+    #btn {
+      margin-left: 0;
+    }
+  
+    li a {
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
+  
+    #search-box {
+      width: 100%;
+     
+      /* display: none; */
+    }
+  
+    .badge {
+    display: none;
+    }
+  }

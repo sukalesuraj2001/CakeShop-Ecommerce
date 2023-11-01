@@ -1,0 +1,108 @@
+
+
+
+
+
+<div class="mytra-login">
+    <form *ngIf="showLoginForm" (ngSubmit)="onLoginSubmit()  " [formGroup]="loginForm">
+      <img src="https://t4.ftcdn.net/jpg/04/50/35/33/360_F_450353376_69Lp5NmR674oWG82ReeTU7JCsEqIpNH5.jpg" alt="Cake Logo">
+      <h1 class="heading">Welcome to India's Largest Cakes Store</h1>
+      <p>Please login to your account</p>
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="alert text-center" role="alert" *ngIf="loginAttempt" [ngClass]="{'alert-primary': loginSuccess, 'alert-danger': !loginSuccess}">
+              {{ loginSuccess ? 'User Login Successfully!' : 'Invalid email and password. Please try again.' }}
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+  
+      <label for="email">Email ID</label>
+      <input type="text" id="email" name="email" formControlName="email" placeholder="Enter your email" required>
+  
+      <label for="password">Password</label>
+      <input type="password" id="password" formControlName="password" name="password" placeholder="Enter your password"
+        required>
+  
+      <div class="forgot">
+        <label>
+          <input type="checkbox" id="keep-signed-in">
+          Keep me signed in
+        </label>
+        <!-- <a href="#">Forgot Password?</a> -->
+      </div>
+  
+      <button class="login" type="submit">Login</button>
+      <button class="signup" (click)="showLoginForm = false">Sign Up</button>
+    </form>
+  
+    <form *ngIf="!showLoginForm" #f="ngForm" (ngSubmit)="formsubmit()" [formGroup]="profileForm">
+      <img src="https://t4.ftcdn.net/jpg/04/50/35/33/360_F_450353376_69Lp5NmR674oWG82ReeTU7JCsEqIpNH5.jpg" alt="Cake Logo">
+      <h1 class="heading">Welcome to India's Largest Cakes Store</h1>
+      <p>Create a new account</p>
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="alert alert-primary text-center" role="alert" *ngIf="registrationSuccess">
+              User Register Successfully!
+           </div>
+          </div>
+        </div>
+      </div>
+  
+      <label for="signup-first-name">First Name</label>
+      <input type="text" id="signup-first-name" formControlName="firstName" placeholder="Enter your first name" required>
+  
+  
+      <div *ngIf="profileForm.get('firstName')?.invalid && profileForm.get('firstName')?.touched"
+      class="text-danger" role="alert">
+        First Name is required.
+      </div>
+  
+  
+  
+  
+  
+      <label for="signup-last-name">Last Name</label>
+      <input type="text" id="signup-last-name" formControlName="lastName" name="signup-last-name"
+        placeholder="Enter your last name" required>
+  
+  
+        <p *ngIf="profileForm.get('lastName')?.invalid && profileForm.get('lastName')?.touched"
+        class="text-danger" role="alert">
+      Last Name is required.
+      </p>
+  
+      <label for="signup-email">Email</label>
+      <input type="text" id="signup-email" name="signup-email" formControlName="email" placeholder="Enter your email"
+        required>
+  
+  
+  
+        
+        <p class="text-danger" *ngIf="profileForm.get('email')?.value !== null && !profileForm.get('email')?.value?.includes('@')   && profileForm.get('email')?.touched"  >
+          Email must contain the @ symbol.
+        </p>
+        
+  
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" name="signup-password" formControlName="password"
+        placeholder="Create a password" required>
+  
+        <p *ngIf="profileForm.get('password')?.invalid && profileForm.get('password')?.touched"
+     class="text-danger" role="alert">
+    Password is required and must contain at least one uppercase character and one special character.
+  </p>
+  
+  
+  
+  <button class="signup" type="submit" [disabled]="profileForm.invalid">Sign Up</button>
+  
+      <button class="login" (click)="showLoginForm = true">Login</button>
+    </form>
+  </div>

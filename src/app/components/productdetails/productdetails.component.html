@@ -1,0 +1,147 @@
+<div class="container">
+    <div class="row"  *ngFor="let x of products">
+        <h4>More about the <b>{{x.categoryName | titlecase}}</b></h4>
+        <div class="col-md-6">
+            <!-- First div: Contains six images arranged in two rows -->
+            <div class="row mt-3">
+                <div class="col-6 mb-2">
+                    <img src="{{x.images}}" alt="Product Image"
+                        class="img-fluid shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="{{x.images}}" alt="Image 2" class="img-fluid shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="{{x.images}}" alt="Image 3" class="img-fluid shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="{{x.images}}" alt="Image 4" class="img-fluid shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="{{x.images}}" alt="Image 5" class="img-fluid shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                </div>
+                <div class="col-6 mb-2">
+                    <img src="{{x.images}}" alt="Image 6" class="img-fluid shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" *ngFor="let x of products">
+            <h3 class=" desc mt-5">{{x.productName}}</h3>
+            <p class="text">{{x.categoryName}}</p>
+
+            <h5 class="text-price fw-bold">{{x.price |currency :"INR"}}</h5>
+
+            <p class="text-success fw-bold">inclusive of all taxes</p>
+
+            <p class="fw-medium">Pick an upgrade
+            </p>
+            <div class="size-chart">
+                <span (click)="selectSize(1)">1kg</span>
+                <span (click)="selectSize(2)">2kg</span>
+                <span (click)="selectSize(3)">3kg</span>
+                <span (click)="selectSize(4)">4kg</span>
+                <span (click)="selectSize(5)">5kg</span>
+                <span (click)="selectSize(6)">6kg</span>
+            </div>
+
+            <div class="row">
+                <div class="col-4 mt-5" *ngFor="let x of products">
+                    <a class="btn myntra-button" (click)="addToCart(x)">
+                        <span class="me-3"><i class="bi bi-bag"></i></span>ADD TO BAG
+                    </a>
+                </div>
+                <div class="col-4 mt-5">
+                    <a id="whishlist" href="#" class="btn myntra-button bg-white text-dark">
+                        <span class="me-3"><i class="bi bi-heart "></i></span>WHSHLIST
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="delivery-option mt-3">
+                <p class="fw-medium">DELIVERY OPTIONS &nbsp;<i class="bi bi-truck"></i></p>
+                <p>Check That When Your Product Is Arrive In Your Address</p>
+                <div class="input-container d-flex">
+                    <div class="search-container">
+                        <input type="text" id="locationInput" placeholder="PINCODE">
+                        <i class="bi bi-search search-icon" (click)="lookupLocation()"></i>
+                    </div>
+                    <div class="date-container ms-5">
+                        <input type="date" (input)="getDate()" id="date">
+                    </div>
+                </div>
+
+
+                <ng-container *ngIf="addressResult !== ''; else elseTemplate">
+                    <p id="addressResult" class="fw-medium">{{ addressResult }}</p>
+                    <!-- Only display the "Get it by" date if currentDate is not null -->
+
+                    <div class="delivery-estimate mt-3">
+                        <p id="addressResult" class="fw-medium" *ngIf="currentDate">Get it by {{ currentDate | date:
+                            'EEEE, MMMM d, y' }}</p>
+
+
+
+
+                        <p>Pay On Delivery Available</p>
+                       
+
+
+                    </div>
+                </ng-container>
+                <ng-template #elseTemplate>
+                    <p class="text-delivery">Please Enter the pincode to check delivery time & pay on delivery
+                        availability</p>
+                </ng-template>
+            </div>
+
+
+
+
+            <div class="speciality mt-4">
+                <p>100% Original Products</p>
+                <p>Pay on delivery might be available</p>
+                
+               
+            </div>
+
+            <div class="offers">
+                <p>Best Price : <b class="best-price fw-bold">Rs {{x.price}}</b> </p>
+                <p>Applicable on: Orders above Rs. 1299 (only on first purchase)</p>
+                
+              
+                <p class="fw-bold">10% Instant Discount on ICICI Bank Credit and Debit Card</p>
+                <small>Min Spend ₹3,500, Max Discount ₹1,200.
+                </small>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="container-fluid">
+        <h5 class="mt-3">Similer Products:</h5>
+        <div class="row mt-4">
+            <div class="col-md-3 mt-3">
+                <div class="card-fluid shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                    <img src="null" class="card-img-top   ">
+                    <div class="card-body">
+                        <h5 class="card-title mt-4">null</h5>
+                        <p id="desc">null</p>
+                        <p class="fw-bold">null</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
