@@ -11,4 +11,5 @@ export class Profile{
     city: string | null = null;
     id:number=0
     userdata:object={}
+    
 }

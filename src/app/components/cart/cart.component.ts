@@ -21,30 +21,31 @@ export class CartComponent {
   selectAllItems: boolean = false;
   cartItem: any[] = [];
   counter: number = 0;
-  user: any;
+  // user: any;
   users: any;
   userId: string = '';
-  address: any;
+  address: string="";
   cartItems: Product[] = [];
   totalPrice: Product[] = [];
-  totalmrp: any;
-  amount: any;
+  totalmrp: number=0;
+  amount: number=0;
 
   constructor(
     private cart: CartService,
     private product: ProductsService,
     private router: Router,
-    private auth: AuthService
+    private auth: AuthService,
+    
   ) {}
 
   ngOnInit(cartdata: Cart): void {
-    this.date = sessionStorage.getItem('date') ?? '';
+    // this.date = sessionStorage.getItem('date') ?? '';
     // discount on price
 
-    // this.auth.getProfile(new Profile).subscribe((res)=>{
-    //   console.log("the profile data is "+JSON.stringify(res));
-    //   this.users=res
-    // })
+    this.auth.getProfile().subscribe((res)=>{
+      console.log("the profile data is "+JSON.stringify(res));
+      this.users=res
+    })
 
     // this.cart.getCart(cartdata).subscribe((res: any) => {
    
@@ -52,7 +53,7 @@ export class CartComponent {
 
     this.updateSelectedItemCount();
 
-    // this.userId=localStorage.getItem("userId")?? ""
+    this.userId=localStorage.getItem("userId")?? ""
     // this.user=localStorage.getItem("userName")
     // this.address=localStorage.getItem("address")
 
@@ -118,44 +119,44 @@ export class CartComponent {
 
   // place order functionality
 
-  // placeOrder() {
-  //   const selectedItems = this.cartItems.filter(cartItem => cartItem.selected);
+  placeOrder() {
+    const selectedItems = this.cartItems.filter(cartItem => cartItem.selected);
 
-  //   if (selectedItems.length === 0) {
-  //     alert("Please select products in the cart before placing an order.");
-  //     return;
-  //   }
+    if (selectedItems.length === 0) {
+      alert("Please select products in the cart before placing an order.");
+      return;
+    }
 
-  //   const orderID = Math.floor(1000 + Math.random() * 9000);
+    const orderID = Math.floor(1000 + Math.random() * 9000);
 
-  //   const totalAmount = selectedItems.reduce((total, cartItem) => {
-  //     const totalItemPrice = cartItem.totalprice * cartItem.qty;
-  //     return total + totalItemPrice;
-  //   }, 0);
+    const totalAmount = selectedItems.reduce((total, cartItem) => {
+      const totalItemPrice = cartItem.totalprice * cartItem.qty;
+      return total + totalItemPrice;
+    }, 0);
 
-  //   this.amount = totalAmount - (totalAmount * (this.discount / 100)) + 40;
+    this.amount = totalAmount - (totalAmount * (this.discount / 100)) + 40;
 
-  //   // Check if userDetails is empty
-  //   if (this.users.length === 0) {
-  //     alert("User details are empty. Please fill in user details before placing an order.");
-  //     return;
-  //   }
+    // Check if userDetails is empty
+    if (this.users.length === 0) {
+      alert("User details are empty. Please fill in user details before placing an order.");
+      return;
+    }
 
-  //   const orderData = {
-  //     userId: this.userId,
-  //     purchaseDate: this.date,
-  //     userDetails: this.users,
-  //     orderID: orderID,
-  //     totalAmount: this.amount,
-  //     selectedItems: selectedItems,
-  //   };
+    const orderData = {
+      userId: this.userId,
+      // purchaseDate: this.date,
+      userDetails: this.users,
+      orderID: orderID,
+      totalAmount: this.amount,
+      selectedItems: selectedItems,
+    };
 
-  //   this.orderservice.orderProduct(orderData).subscribe(() => {
-  //     alert("Order placed successfully!");
-  //     this.router.navigate(['dashboard/payment']);
-  //   });
+    this.cart.orderProduct(orderData).subscribe(() => {
+      alert("Order placed successfully!");
+      this.router.navigate(['/']);
+    });
 
-  // }
+  }
 
   selectAllItemsChanged() {
     for (const item of this.cartItems) {

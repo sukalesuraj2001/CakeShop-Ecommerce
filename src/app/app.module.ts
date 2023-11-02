@@ -11,7 +11,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductdetailsComponent } from './components/productdetails/productdetails.component';
 import { CartComponent } from './components/cart/cart.component';
-import { ProfileComponent } from './components/profile/profile.component'
+import { ProfileComponent } from './components/profile/profile.component';
+import { OrderComponent } from './components/order/order.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { ProfileComponent } from './components/profile/profile.component'
     ProductsComponent,
     ProductdetailsComponent,
     CartComponent,
-    ProfileComponent
+    ProfileComponent,
+    // WishlistComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

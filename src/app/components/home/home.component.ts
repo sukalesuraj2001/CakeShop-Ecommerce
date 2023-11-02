@@ -57,4 +57,7 @@ this.colors.getColor().subscribe((res)=>{
   
  }
 
+
+ 
+
 }

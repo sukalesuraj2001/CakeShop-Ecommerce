@@ -17,7 +17,8 @@ export interface Flovour{
 export interface Price{
     categoryId: number
     categoryName:string;
-    images:string
+    images:string;
+    price:number;
 }
 export interface Color{
     categoryId: number

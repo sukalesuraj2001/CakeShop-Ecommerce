@@ -65,7 +65,7 @@ export class ProductdetailsComponent {
     }
       data.size = this.size;
       data.date = this.selectedDate;
-      data.address = this.addressResult;
+      // data.address = this.addressResult;
       data.userId = userId || "";
     
       console.log("the cart data are " + JSON.stringify(data));
@@ -140,5 +140,24 @@ export class ProductdetailsComponent {
       }
     }
 
+
+
+
+
+
+
+    // add to wishlist
+    wishlist(result: Product) {
+      
+      result.userId = localStorage.getItem('userId') ?? '';
+      this.cart.getWishlist(result).subscribe(() => {
+        alert('Added to WishList');
+  
+        setTimeout(() => {
+          this.router.navigate(['wishlist']);
+        }, 100);
+      });
+      // this.isWishlistClicked = !this.isWishlistClicked;
+    }
 
 }

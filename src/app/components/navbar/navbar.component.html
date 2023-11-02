@@ -1,7 +1,7 @@
-<div>
+<div *ngIf="!isSeller">
     <nav class="navbar navbar-expand-lg    shadow-lg p-3 mb-5 bg-body-white rounded">
         <div class="container">
-            <h3 routerLink="/">CAKES</h3>
+            <h3 class="logo me-3" routerLink="/">CAKES</h3>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -13,356 +13,31 @@
                         <a class="nav-link text-black" href="#" role="button" dropdownToggle>
                             BIRTHDAY
                         </a>
-                        <ul class="dropdown-menu" dropdownMenu>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Top Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Tshirt</a></li>
-                                        <li><a class="dropdown-item" href="#">casual Shirts</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Formal Shirts</a></li>
-                                        <li><a class="dropdown-item" href="#">Jackets </a></li>
-                                        <li><a class="dropdown-item" href="#">Blazzers & Coats </a></li>
-                                        <li><a class="dropdown-item" href="#">Suits</a></li>
-                                        <li><a class="dropdown-item" href="#">Rain Jackets</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Bottom Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Jeans</a></li>
-                                        <li><a class="dropdown-item" href="#">Casual Trousers</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Formal Trousers</a></li>
-                                        <li><a class="dropdown-item" href="#">Shorts</a></li>
-                                        <li><a class="dropdown-item" href="#">Track Pant & Joggers </a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">foot Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Casual Shoes </a></li>
-                                        <li><a class="dropdown-item" href="#">Sports Shoes </a></li>
-
-                                        <li><a class="dropdown-item" href="#">Sneakers</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Sports & Active Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Sports Shoes</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Sports Sandals</a></li>
-                                        <li><a class="dropdown-item" href="#">Active Tshirts</a></li>
-                                        <li><a class="dropdown-item" href="#">Track Pants</a></li>
-                                        <li><a class="dropdown-item" href="#">Track Suits</a></li>
-                                        <li><a class="dropdown-item" href="#">Jackets</a></li>
-                                        <li><a class="dropdown-item" href="#">Swimwear</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Fashion Accesserise</a></li>
-                                        <li><a class="dropdown-item" href="#">Wallets</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Belts</a></li>
-                                        <li><a class="dropdown-item" href="#">Perfumes </a></li>
-                                        <li><a class="dropdown-item" href="#">Trimmers</a></li>
-                                        <li><a class="dropdown-item" href="#">Deodrants</a></li>
-                                        <li><a class="dropdown-item" href="#">Accessory Gift Sets</a></li>
-                                        <li><a class="dropdown-item" href="#">Caps & Hats</a></li>
-                                        <!-- <li><a class="dropdown-item" href="#">Mufflers</a></li>
-                      <li><a class="dropdown-item" href="#">Phone Cases</a></li>
-                      <li><a class="dropdown-item" href="#">Helmets</a></li> -->
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Festival Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Kurtas</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Shervanise</a></li>
-                                        <li><a class="dropdown-item" href="#">Dhoties</a></li>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul>
+                        
                     </li>
                     <li class="nav-item dropdown" dropdown>
                         <a class="nav-link  text-black" href="#" role="button" dropdownToggle>
                             ANIVERSARY
                         </a>
-                        <ul class="dropdown-menu" dropdownMenu>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Indian And Fusion Wear</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Kurtas & Suits</a></li>
-                                        <li><a class="dropdown-item" href="#">Sarees</a></li>
-                                        <li><a class="dropdown-item" href="#">Tops</a></li>
-                                        <li><a class="dropdown-item" href="#">Ethentic Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Leggies</a></li>
-                                        <li><a class="dropdown-item" href="#">Skirts</a></li>
-                                        <li><a class="dropdown-item" href="#">Dress Materials</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Western Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Tshirt</a></li>
-                                        <li><a class="dropdown-item" href="#">Dresses</a></li>
-                                        <li><a class="dropdown-item" href="#">Tops</a></li>
-                                        <li><a class="dropdown-item" href="#">Jeans</a></li>
-                                        <li><a class="dropdown-item" href="#">Trousers</a></li>
-                                        <li><a class="dropdown-item" href="#">Shorts</a></li>
-                                        <li><a class="dropdown-item" href="#">PLaySuits</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Foot Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Flats</a></li>
-                                        <li><a class="dropdown-item" href="#">Casual Shoes</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Hells</a></li>
-                                        <li><a class="dropdown-item" href="#">Boots</a></li>
-                                        <li><a class="dropdown-item" href="#">Sports Shoes</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Beauty</a></li>
-                                        <li><a class="dropdown-item" href="#">Makeup</a></li>
-                                        <li><a class="dropdown-item" href="#">Skincare</a></li>
-                                        <li><a class="dropdown-item" href="#">Premium Beauty</a></li>
-                                        <li><a class="dropdown-item" href="#">Lipsticks</a></li>
-                                        <li><a class="dropdown-item" href="#">Fregnences</a></li>
-
-
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Gadgets</a></li>
-                                        <li><a class="dropdown-item" href="#">Smart Wearables</a></li>
-                                        <li><a class="dropdown-item" href="#">Fitness Gadgets</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Headphones</a></li>
-                                        <li><a class="dropdown-item" href="#">Speakers</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-danger" href="#">Jewellary</a></li>
-                                        <li><a class="dropdown-item" href="#">Fashion Jewellary</a></li>
-                                        <li><a class="dropdown-item" href="#">Fine Jewellary</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Earings</a></li>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul>
+                      
                     </li>
                     <li class="nav-item dropdown" dropdown>
                         <a class="nav-link  text-black" href="#" role="button" dropdownToggle>
                             GLOBAL
                         </a>
-                        <ul class="dropdown-menu" dropdownMenu>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item" id="kids" href="#">Boys Clothings</a></li>
-                                        <li><a class="dropdown-item" href="#">Tshirt</a></li>
-                                        <li><a class="dropdown-item" href="#">casual Shirts</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Formal Shirts</a></li>
-                                        <li><a class="dropdown-item" href="#">Jackets </a></li>
-                                        <li><a class="dropdown-item" href="#">Blazzers & Coats </a></li>
-                                        <li><a class="dropdown-item" href="#">Suits</a></li>
-                                        <li><a class="dropdown-item" href="#">Rain Jackets</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item" id="kids" href="#">Girls Clothings</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Kurtas & Suits</a></li>
-                                        <li><a class="dropdown-item" href="#">Sarees</a></li>
-                                        <li><a class="dropdown-item" href="#">Tops</a></li>
-                                        <li><a class="dropdown-item" href="#">Ethentic Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Leggies</a></li>
-                                        <li><a class="dropdown-item" href="#">Skirts</a></li>
-                                        <li><a class="dropdown-item" href="#">Dress Materials</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item " id="kids" href="#">Foot Wear</a></li>
-                                        <li><a class="dropdown-item" href="#">Casual Shoes </a></li>
-                                        <li><a class="dropdown-item" href="#">Sports Shoes </a></li>
-                                        <li><a class="dropdown-item" href="#">school Shoes </a></li>
-
-                                        <li><a class="dropdown-item" href="#">Sneakers</a></li>
-                                        <li><a class="dropdown-item" href="#">Socks</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item" id="kids" href="#">Toys &Games</a></li>
-                                        <li><a class="dropdown-item" href="#">Learning </a></li>
-                                        <li><a class="dropdown-item" href="#">Developement </a></li>
-
-                                        <li><a class="dropdown-item" href="#">Activity Toys</a></li>
-                                        <li><a class="dropdown-item" href="#">Soft Toys</a></li>
-                                        <li><a class="dropdown-item" href="#">Play Sets</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item" id="kids" href="#">Infants</a></li>
-                                        <li><a class="dropdown-item" href="#">BoduSuits</a></li>
-                                        <li><a class="dropdown-item" href="#">Rompers</a></li>
-                                        <li><a class="dropdown-item" href="#">Clothing Sets </a></li>
-                                        <li><a class="dropdown-item" href="#">Clothing Sets </a></li>
-                                        <li><a class="dropdown-item" href="#">Tshirts </a></li>
-                                        <li><a class="dropdown-item" href="#">Dresses </a></li>
-                                        <li><a class="dropdown-item" href="#">Botto Wear </a></li>
-
-
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item" id="kids" href="#">Kids Accesserise</a></li>
-                                        <li><a class="dropdown-item" href="#">Bags</a></li>
-                                        <li><a class="dropdown-item" href="#">Watches</a></li>
-                                        <li><a class="dropdown-item" href="#">Jewellary</a></li>
-                                        <li><a class="dropdown-item" href="#">Sunglasses</a></li>
-                                        <li><a class="dropdown-item" href="#">Masks</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Hats</a></li>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul>
+                       
                     </li>
                     <li class="nav-item dropdown" dropdown>
                         <a class="nav-link  text-black" href="#" role="button" dropdownToggle>
                             CAKES
                         </a>
-                        <ul class="dropdown-menu" dropdownMenu>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-warning" href="#">Furnishing</a></li>
-                                        <li><a class="dropdown-item" href="#">Bed Runner</a></li>
-                                        <li><a class="dropdown-item" href="#">Bedshits</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Mattress</a></li>
-                                        <li><a class="dropdown-item" href="#">Bedding Sets</a></li>
-                                        <li><a class="dropdown-item" href="#">Blankets</a></li>
-                                        <li><a class="dropdown-item" href="#">Pellow</a></li>
-                                        <li><a class="dropdown-item" href="#">Bed Cover</a></li>
-
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-warning" href="#">Bath</a></li>
-                                        <li><a class="dropdown-item" href="#">Bath Towels</a></li>
-                                        <li><a class="dropdown-item" href="#">Hands Towels</a></li>
-                                        <li><a class="dropdown-item" href="#">Face Towels</a></li>
-                                        <li><a class="dropdown-item" href="#">Beach Towels</a></li>
-                                        <li><a class="dropdown-item" href="#">Towel Sets</a></li>
-                                        <li><a class="dropdown-item" href="#">Bath Rugs</a></li>
-                                        <li><a class="dropdown-item" href="#">Shower Curtains</a></li>
-
-
-
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-warning" href="#">Lightings</a></li>
-                                        <li><a class="dropdown-item" href="#">Floor Lamps</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Ceiling Lamps</a></li>
-                                        <li><a class="dropdown-item" href="#">Table Lamps </a></li>
-                                        <li><a class="dropdown-item" href="#">Wall Lamps </a></li>
-                                        <li><a class="dropdown-item" href="#">Outdoor Lamps </a></li>
-                                        <li><a class="dropdown-item" href="#">String Lights </a></li>
-                                        <li><a class="dropdown-item" href="#">Bed Lights </a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-warning" href="#">Home Decor</a></li>
-                                        <li><a class="dropdown-item" href="#">Plants</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Aromas</a></li>
-                                        <li><a class="dropdown-item" href="#">Clocks</a></li>
-                                        <li><a class="dropdown-item" href="#">Mirrors</a></li>
-                                        <li><a class="dropdown-item" href="#">Wall Decors</a></li>
-                                        <li><a class="dropdown-item" href="#">Festive Decors</a></li>
-                                        <li><a class="dropdown-item" href="#">Fountains</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-warning" href="#">Storage</a></li>
-                                        <li><a class="dropdown-item" href="#">Hangers</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Bins</a></li>
-                                        <li><a class="dropdown-item" href="#">Organisers</a></li>
-                                        <li><a class="dropdown-item" href="#">Hooks</a></li>
-                                        <li><a class="dropdown-item" href="#">Holders</a></li>
-                                        <li><a class="dropdown-item" href="#">Laundry Bags</a></li>
-                                        <li><a class="dropdown-item" href="#">Containers</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-warning" href="#">Kitchens</a></li>
-                                        <li><a class="dropdown-item" href="#">Table Runner</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Dinnerware</a></li>
-                                        <li><a class="dropdown-item" href="#">Cups</a></li>
-                                        <li><a class="dropdown-item" href="#">Mugs</a></li>
-                                        <li><a class="dropdown-item" href="#">Backware</a></li>
-                                        <li><a class="dropdown-item" href="#">Cookware</a></li>
-                                        <li><a class="dropdown-item" href="#">Kitchen Storage</a></li>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul>
+                        
                     </li>
                     <li class="nav-item dropdown" dropdown>
                         <a class="nav-link  text-black" href="#" role="button" dropdownToggle>
                             OCCASIONS
                         </a>
-                        <ul class="dropdown-menu" dropdownMenu>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-primary" href="#">Makeup</a></li>
-                                        <li><a class="dropdown-item" href="#">Lipsticks</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Lip Gloss</a></li>
-                                        <li><a class="dropdown-item" href="#">Lip Liner</a></li>
-                                        <li><a class="dropdown-item" href="#">Mascara</a></li>
-                                        <li><a class="dropdown-item" href="#">Eyeliner</a></li>
-                                        <li><a class="dropdown-item" href="#">Kajal</a></li>
-                                        <li><a class="dropdown-item" href="#">foundation</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-primary" href="#">Skincare</a></li>
-                                        <li><a class="dropdown-item" href="#">Cleanser</a></li>
-                                        <li><a class="dropdown-item" href="#">Facewash</a></li>
-                                        <li><a class="dropdown-item" href="#">Sunscreen</a></li>
-                                        <li><a class="dropdown-item" href="#">Serum</a></li>
-                                        <li><a class="dropdown-item" href="#">Facewash</a></li>
-                                        <li><a class="dropdown-item" href="#">Lipbam</a></li>
-                                        <li><a class="dropdown-item" href="#">Eyecream</a></li>
-
-
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-primary" href="#">Harecare</a></li>
-                                        <li><a class="dropdown-item" href="#">Shampoo</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Conditioner</a></li>
-                                        <li><a class="dropdown-item" href="#">Hair Cream</a></li>
-                                        <li><a class="dropdown-item" href="#">Hair Oil</a></li>
-                                        <li><a class="dropdown-item" href="#">Hair Gel</a></li>
-                                        <li><a class="dropdown-item" href="#">Hair Color</a></li>
-                                        <li><a class="dropdown-item" href="#">Hair Serum</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-primary" href="#">Fregnences</a></li>
-                                        <li><a class="dropdown-item" href="#">Perfumes</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Deodorent</a></li>
-                                        <li><a class="dropdown-item" href="#">Body Mist</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-primary" href="#">Appliences</a></li>
-                                        <li><a class="dropdown-item" href="#">Hair Straightner</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Hair Dryer</a></li>
-                                        <li><a class="dropdown-item" href="#">Epilator</a></li>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <li><a class="dropdown-item text-primary" href="#">Mens Grooming</a></li>
-                                        <li><a class="dropdown-item" href="#">Trimmers</a></li>
-
-                                        <li><a class="dropdown-item" href="#">Beard Oil</a></li>
-                                        <li><a class="dropdown-item" href="#">Hair Wax</a></li>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul>
+                        
                     </li>
                     <li class="nav-item dropdown studio" dropdown>
                         <a class="nav-link text-black" href="#" role="button" dropdownToggle>
@@ -370,13 +45,7 @@
                             <span
                                 class="position-absolute top-0 mt-3  start-100 translate-middle badge rounded-pill text-danger">NEW</span>
                         </a>
-                        <ul class="dropdown-menu " id="studio" dropdownMenu>
-                            <img src="assets/studio.png" class="img-fluid" height="400%" alt="...">
-                            <div class="col-md-6">
-                                <button id="btn" class="btn ">Explore Studio ></button>
-                            </div>
-
-                        </ul>
+                       
                     </li>
 
 
@@ -406,10 +75,10 @@
                                 <a class="dropdown-item text-black" (click)="logout()">Logout</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black" routerLink="sellerregister">Seller</a>
+                                <a class="nav-link text-black" routerLink="/seller/sellerlogin">Seller</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-black" routerLink="dashboard/order">Orders</a>
+                                <a class="nav-link text-black" routerLink="order">Orders</a>
                             </li>
 
 
@@ -420,12 +89,12 @@
 
 
 
-
-                    <a class="btn position-relative " routerLink="dashboard/wishlist">
+<!-- 
+                    <a class="btn position-relative " routerLink="wishlist">
                         <i class="bi bi-heart"></i> <br>
-                        <p class="icon-txt" routerLink="dashboard/wishlist"> Wishlist</p>
-                    </a>
-                    <a class="btn position-relative" routerLink="dashboard/cart">
+                        <p class="icon-txt" routerLink="wishlist"> Wishlist</p>
+                    </a> -->
+                    <a class="btn position-relative" routerLink="cart">
                         <i class="bi bi-bag" routerLink="cart" ></i> <br>
                         <p class="icon-txt"  routerLink="cart"> Bag</p>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -438,3 +107,79 @@
         </div>
     </nav>
 </div>
+
+<!-- seller  navbar start -->
+<div *ngIf="isSeller">
+    <nav class="navbar navbar-expand-lg    shadow-lg p-3 mb-5 bg-body-white rounded">
+        <div class="container">
+            <h3 class="logo me-3" routerLink="#" (click)=" toggleSidebar()">Seller</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+             
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar  shadow-lg p-4 mb-5 bg-body-white rounded" [ngClass]="{ 'open': isSidebarOpen }">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" dropdown>
+                <a class="nav-link text-black" role="button" dropdownToggle>
+                  PROFILE
+                </a>
+                
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a class="nav-link  text-black" role="button" dropdownToggle>
+                    TOTAL PRODUCTS
+                </a>
+              
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a class="nav-link  text-black" role="button" dropdownToggle>
+                    ADD PRODUCTS
+                </a>
+               
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a class="nav-link  text-black" role="button" dropdownToggle>
+                    CAKES
+                </a>
+                
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a class="nav-link  text-black" role="button" dropdownToggle>
+                    OCCASIONS
+                </a>
+                
+            </li>
+            <li class="nav-item dropdown studio" (click)="sellerLogout()" routerLink="/" dropdown>
+                <a class="nav-link text-black" (click)=" toggleSidebar()" role="button" dropdownToggle>
+                   LOGOUT
+                  
+                </a>
+               
+            </li>
+
+
+
+
+        </ul>
+      </div>
+      
+     
+      
+</div>
+
+
+<!-- [ngClass]="{ 'shift': isSidebarOpen }" -->
+
+
+
+
+
+
+

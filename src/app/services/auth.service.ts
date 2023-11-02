@@ -25,7 +25,7 @@ export class AuthService {
   addProfile(data: Profile): Observable<Profile[]> {
     return this.http.post<Profile[]>(`${this.apiUrl}/Profile`, data);
   }
-  getProfile(userdata: Profile): Observable<Profile[]> {
+  getProfile(): Observable<Profile[]> {
     const x = localStorage.getItem('userId');
     return this.http.get<Profile[]>(`${this.apiUrl}/Profile?userId=${x}`);
   }

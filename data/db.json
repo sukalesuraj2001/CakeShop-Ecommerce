@@ -6,6 +6,22 @@
       "email": "srsukale20@gmail.com",
       "password": "Suraj@2001",
       "id": 1
+    },
+    {
+      "firstName": "Mahesh",
+      "lastName": "Khedkar",
+      "email": "mahesh@gmail.com",
+      "password": "Mahesh@2001",
+      "id": 2
+    }
+  ],
+  "seller": [
+    {
+      "firstName": "Suraj",
+      "lastName": "Sukale",
+      "email": "srsukale20@gmail.com",
+      "password": "Suraj@100",
+      "id": 1
     }
   ],
   "Products": [
@@ -188,6 +204,18 @@
       "id": 15,
       "qty": 1,
       "totalprice": 509
+    },
+    {
+      "productName": "Decorated Chocolate Truffle Cake Half Kg",
+      "price": 509,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_1.jpg",
+      "categoryName": "Chocolate Cake",
+      "delivery": "Chocolate Cake",
+      "categoryId": 28,
+      "id": 15,
+      "qty": 1,
+      "totalprice": 509
     }
   ],
   "Cakebycategory": [
@@ -269,16 +297,19 @@
   "Price": [
     {
       "categoryId": 28,
+      "price": 999,
       "categoryName": "lowprice",
       "images": "https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/999_web.jpg"
     },
     {
       "categoryId": 29,
+      "price": 1499,
       "categoryName": "mediumprice",
       "images": "https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/1499_web.jpg"
     },
     {
       "categoryId": 30,
+      "price": 1999,
       "categoryName": "highprice",
       "images": "https://www.fnp.com/assets/images/custom/cakes_23/shop_by_price/1999_web.jpg"
     }
@@ -321,7 +352,285 @@
       "date": "2023-11-14",
       "address": "Address: Pune, 411011, Pune, Maharashtra, India",
       "userId": "1"
+    },
+    {
+      "productName": "Decorated Chocolate Truffle Cake Half Kg",
+      "price": 859,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/m/v20221221115007/decorated-chocolate-truffle-cake-half-kg.jpg",
+      "categoryName": "Best Seller Cakes",
+      "delivery": "Best Seller Cakes",
+      "categoryId": 16,
+      "id": 5,
+      "qty": 1,
+      "totalprice": 859,
+      "size": 1,
+      "date": "2023-11-08",
+      "userId": "2"
+    },
+    {
+      "productName": "Dark Chocolate Truffle Bliss- Half Kg",
+      "price": 859,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/m/v20230928124536/dark-chocolate-truffle-bliss-half-kg.jpg",
+      "categoryName": "Brand New Cakes",
+      "delivery": "Brand New Cakes",
+      "categoryId": 17,
+      "id": 8,
+      "qty": 1,
+      "totalprice": 859,
+      "size": 1,
+      "date": "2023-11-06",
+      "userId": "1"
+    },
+    {
+      "productName": "Fudge Brownie Cake Half kg",
+      "price": 809,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Chocolate-Cakes-web_2.jpg",
+      "categoryName": "Chocolate Cake",
+      "delivery": "Chocolate Cake",
+      "categoryId": 20,
+      "id": 14,
+      "qty": 1,
+      "totalprice": 869,
+      "size": 1,
+      "date": "2023-11-09",
+      "userId": "1"
     }
   ],
-  "profile": []
+  "profile": [
+    {
+      "firstName": "Suraj",
+      "lastName": "Sukale",
+      "email": "srsukale20@gmail.com",
+      "mobileNumber": "9112768829",
+      "address1": "Balaji Heights Kharadi Pune",
+      "city": "Pune City",
+      "state": "Maharashtra",
+      "image": "C:\\fakepath\\mobile.jpg",
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "firstName": "Mahesh",
+      "lastName": "Khedkar",
+      "email": "mahesh@gmail.com",
+      "mobileNumber": "7896587458",
+      "address1": "Balaji Nagar Kharadi Pune 411011 ",
+      "city": "Pune City",
+      "state": "Maharashtra",
+      "image": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+      "userId": "2",
+      "id": 2
+    }
+  ],
+  "Wishlist": [
+    {
+      "productName": "Decorated Chocolate Truffle Cake Half Kg",
+      "price": 1500,
+      "rating": 4.5,
+      "images": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_2.jpg",
+      "categoryName": "Same Day Delivery Cakes",
+      "delivery": "Same Day Delivery Cakes",
+      "categoryId": 14,
+      "id": 1,
+      "qty": 1,
+      "totalprice": 1500,
+      "userId": "1"
+    }
+  ],
+  "Buy": [
+    {
+      "userId": "2",
+      "userDetails": [
+        {
+          "firstName": "Mahesh",
+          "lastName": "Khedkar",
+          "email": "mahesh@gmail.com",
+          "mobileNumber": "7896587458",
+          "address1": "Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+          "userId": "2",
+          "id": 2
+        }
+      ],
+      "orderID": 4777,
+      "totalAmount": 1586.2,
+      "selectedItems": [
+        {
+          "productName": "Decorated Chocolate Truffle Cake Half Kg",
+          "price": 859,
+          "rating": 4.5,
+          "images": "https://www.fnp.com/images/pr/m/v20221221115007/decorated-chocolate-truffle-cake-half-kg.jpg",
+          "categoryName": "Best Seller Cakes",
+          "delivery": "Best Seller Cakes",
+          "categoryId": 16,
+          "id": 5,
+          "qty": 2,
+          "totalprice": 859,
+          "size": 1,
+          "date": "2023-11-08",
+          "userId": "2",
+          "selected": true
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userId": "1",
+      "userDetails": [
+        {
+          "firstName": "Suraj",
+          "lastName": "Sukale",
+          "email": "srsukale20@gmail.com",
+          "mobileNumber": "9112768829",
+          "address1": "Balaji Heights Kharadi Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
+          "userId": "1",
+          "id": 1
+        }
+      ],
+      "orderID": 9809,
+      "totalAmount": 579.1,
+      "selectedItems": [
+        {
+          "productName": "Chocolate Caramel Fudge Cake Half Kg",
+          "price": 599,
+          "rating": 4.5,
+          "images": "https://www.fnp.com/images/pr/l/v20221205145728/chocolate-caramel-fudge-cake-half-kg_1.jpg",
+          "categoryName": "Same Day Delivery Cakes",
+          "delivery": "Same Day Delivery",
+          "categoryId": 14,
+          "id": 2,
+          "qty": 1,
+          "totalprice": 599,
+          "size": 1,
+          "date": "2023-11-14",
+          "address": "Address: Pune, 411011, Pune, Maharashtra, India",
+          "userId": "1",
+          "selected": true
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": "1",
+      "userDetails": [
+        {
+          "firstName": "Suraj",
+          "lastName": "Sukale",
+          "email": "srsukale20@gmail.com",
+          "mobileNumber": "9112768829",
+          "address1": "Balaji Heights Kharadi Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
+          "userId": "1",
+          "id": 1
+        }
+      ],
+      "orderID": 6718,
+      "totalAmount": 1604.2,
+      "selectedItems": [
+        {
+          "productName": "Fudge Brownie Cake Half kg",
+          "price": 809,
+          "rating": 4.5,
+          "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Chocolate-Cakes-web_2.jpg",
+          "categoryName": "Chocolate Cake",
+          "delivery": "Chocolate Cake",
+          "categoryId": 20,
+          "id": 14,
+          "qty": 2,
+          "totalprice": 869,
+          "size": 1,
+          "date": "2023-11-09",
+          "userId": "1",
+          "selected": true
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": "1",
+      "userDetails": [
+        {
+          "firstName": "Suraj",
+          "lastName": "Sukale",
+          "email": "srsukale20@gmail.com",
+          "mobileNumber": "9112768829",
+          "address1": "Balaji Heights Kharadi Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
+          "userId": "1",
+          "id": 1
+        }
+      ],
+      "orderID": 4223,
+      "totalAmount": 813.1,
+      "selectedItems": [
+        {
+          "productName": "Dark Chocolate Truffle Bliss- Half Kg",
+          "price": 859,
+          "rating": 4.5,
+          "images": "https://www.fnp.com/images/pr/m/v20230928124536/dark-chocolate-truffle-bliss-half-kg.jpg",
+          "categoryName": "Brand New Cakes",
+          "delivery": "Brand New Cakes",
+          "categoryId": 17,
+          "id": 8,
+          "qty": 1,
+          "totalprice": 859,
+          "size": 1,
+          "date": "2023-11-06",
+          "userId": "1",
+          "selected": true
+        }
+      ],
+      "id": 4
+    },
+    {
+      "userId": "1",
+      "userDetails": [
+        {
+          "firstName": "Suraj",
+          "lastName": "Sukale",
+          "email": "srsukale20@gmail.com",
+          "mobileNumber": "9112768829",
+          "address1": "Balaji Heights Kharadi Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg",
+          "userId": "1",
+          "id": 1
+        }
+      ],
+      "orderID": 7835,
+      "totalAmount": 822.1,
+      "selectedItems": [
+        {
+          "productName": "Fudge Brownie Cake Half kg",
+          "price": 809,
+          "rating": 4.5,
+          "images": "https://www.fnp.com/assets/images/custom/cakes_23/flavour/Chocolate-Cakes-web_2.jpg",
+          "categoryName": "Chocolate Cake",
+          "delivery": "Chocolate Cake",
+          "categoryId": 20,
+          "id": 14,
+          "qty": 1,
+          "totalprice": 869,
+          "size": 1,
+          "date": "2023-11-09",
+          "userId": "1",
+          "selected": true
+        }
+      ],
+      "id": 5
+    }
+  ]
 }
