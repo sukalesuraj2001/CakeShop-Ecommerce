@@ -1,0 +1,139 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center">Add the Products</h3>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>Add Product</h4>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="profileForm" (ngSubmit)="onSubmit(profileForm.value)">
+                        <div class="mb-3">
+                            <label for="productName" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" formControlName="productName" id="productName"
+                                placeholder="Enter product name" required>
+                        </div>
+
+                        <label for="cat" class="form-label">categoryId</label>
+
+                        <select class="form-select mb-3" formControlName="categoryId" id="cat"
+                            aria-label="Default select example">
+
+                            <option value="14" selected>Same Day Delivery Cakes</option>
+                            <option value="15" selected>Midnight Delivery Cakes</option>
+                            <option value="16" selected>Best Seller Cakes</option>
+                            <option value="17" selected>Brand New Cakes</option>
+                            <option value="18" selected>Birthday Cake</option>
+                            <option value="19" selected>Aniversary Cake</option>
+                            <option value="20" selected>Chocolate Cake</option>
+                            <option value="21" selected>Black Forest Cake</option>
+                            <option value="22" selected>Butterscotch Cakes</option>
+                            <option value="23" selected>Pineapple Cakes</option>
+                            <option value="24" selected>Vanila Cakes</option>
+                            <option value="25" selected>Truffle Cakes</option>
+                            <option value="26" selected>Velvet Cakes</option>
+                            <option value="27" selected>Fruit Cakes</option>
+                            <option value="28" selected>less than 999 Cakes</option>
+                            <option value="29" selected>under 1999 Cakes</option>
+                            <option value="30" selected>above 1999 Cakes</option>
+                            <option value="31" selected>Brown</option>
+                            <option value="32" selected>Red</option>
+                            <option value="33" selected>Blue</option>
+                            <option value="34" selected>White</option>
+
+                        </select>
+                        <label for="cat2" class="form-label">categoryName</label>
+
+                        <select class="form-select mb-3" formControlName="categoryName" id="cat2"
+                            aria-label="Default select example">
+
+                            <option value="Same Day Delivery Cakes" selected>Same Day Delivery Cakes</option>
+                            <option value="Midnight Delivery Cakes" selected>Midnight Delivery Cakes</option>
+                            <option value="Best Seller Cakes" selected>Best Seller Cakes</option>
+                            <option value="Brand New Cakes" selected>Brand New Cakes</option>
+                            <option value="Birthday Cake" selected>Birthday Cake</option>
+                            <option value="Aniversary Cake" selected>Aniversary Cake</option>
+                            <option value="Chocolate Cake" selected>Chocolate Cake</option>
+                            <option value="Black Forest Cake" selected>Black Forest Cake</option>
+                            <option value="Butterscotch Cakes" selected>Butterscotch Cakes</option>
+                            <option value="Pineapple Cakes" selected>Pineapple Cakes</option>
+                            <option value="Vanila Cakes" selected>Vanila Cakes</option>
+                            <option value="Truffle Cakes" selected>Truffle Cakes</option>
+                            <option value="Velvet Cakes" selected>Velvet Cakes</option>
+                            <option value="Fruit Cakes" selected>Fruit Cakes</option>
+                            <option value="less than 999 Cakes" selected>less than 999 Cakes</option>
+                            <option value="under 1999 Cakes" selected>under 1999 Cakes</option>
+                            <option value="above 1999 Cakes" selected>above 1999 Cakes</option>
+                            <option value="Brown" selected>Brown</option>
+                            <option value="Red" selected>Red</option>
+                            <option value="Blue" selected>Blue</option>
+                            <option value="White" selected>White</option>
+                        </select>
+                        <div class="mb-3">
+                            <label for="productPrice" class="form-label">Price</label>
+                            <input type="number" formControlName="price" class="form-control" id="productPrice"
+                                placeholder="Enter product price" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Total Price</label>
+                            <input type="number" formControlName="totalprice" class="form-control" id="price"
+                                placeholder="Enter Total Price" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productImage" class="form-label">Product Image</label>
+                            <input type="text" formControlName="images" class="form-control" id="productImage"
+                                accept="image" required placeholder="Enter image URL">
+                        </div>
+                        <div class="mb-3">
+                            <label for="productImage1" class="form-label">Product Image1</label>
+                            <input type="text" formControlName="images1" class="form-control" id="productImage"
+                                accept="image" required placeholder="Enter image URL1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="productImage2" class="form-label">Product Image2</label>
+                            <input type="text" formControlName="images2" class="form-control" id="productImage"
+                                accept="image" required placeholder="Enter image URL2">
+                        </div>
+                        <div class="mb-3">
+                            <label for="productImage3" class="form-label">Product Image3</label>
+                            <input type="text" formControlName="images3" class="form-control" id="productImage"
+                                accept="image" required placeholder="Enter image URL3">
+                        </div>
+                        <div class="mb-3">
+                            <label for="productImage4" class="form-label">Product Image4</label>
+                            <input type="text" formControlName="images4" class="form-control" id="productImage"
+                                accept="image" required placeholder="Enter image URL4">
+                        </div>
+                        <div class="mb-3">
+                            <label for="qty" class="form-label">Quantity</label>
+                            <input type="number" formControlName="qty" class="form-control" placeholder="Add Quantity"
+                                id="qty" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Rating</label>
+                            <input type="number" formControlName="rating" class="form-control" placeholder="Add Ratings"
+                                id="rating" required>
+                        </div>
+                        <div class="btn ">
+                            <button type="submit" class="btn btn-primary">Add Product</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

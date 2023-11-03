@@ -32,7 +32,7 @@ removeProduct(itemId: number) {
 
 addProduct(data:any){
 
-  return this.http.post(`${this.apiUrl}/Product`,data);
+  return this.http.post(`${this.apiUrl}/Products`,data);
 }
 
 getOrders(data: any) {

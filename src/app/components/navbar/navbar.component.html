@@ -68,7 +68,7 @@
                             <p class="dropdown-item text-black fw-bold">Hello </p>
                             <hr>
                             <li><a class="dropdown-item text-black" routerLink="/profile">Account</a></li>
-                            <li><a class="dropdown-item text-black" routerLink="dashboard/about">About</a></li>
+                            <li><a class="dropdown-item text-black" routerLink="#">About</a></li>
                             <li>
                             <li><a class="dropdown-item text-black" routerLink="user/login">Login</a></li>
                             <li>
@@ -126,7 +126,7 @@
     </nav>
     <div class="sidebar  shadow-lg p-4 mb-5 bg-body-white rounded" [ngClass]="{ 'open': isSidebarOpen }">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown" dropdown>
+            <li class="nav-item dropdown" routerLink="/seller/sellerhome" dropdown>
                 <a class="nav-link text-black" role="button" dropdownToggle>
                   PROFILE
                 </a>
@@ -138,8 +138,8 @@
                 </a>
               
             </li>
-            <li class="nav-item dropdown" dropdown>
-                <a class="nav-link  text-black" role="button" dropdownToggle>
+            <li class="nav-item dropdown" routerLink="/seller/addproduct" dropdown>
+                <a class="nav-link  text-black"  role="button" dropdownToggle>
                     ADD PRODUCTS
                 </a>
                

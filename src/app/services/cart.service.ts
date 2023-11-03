@@ -32,6 +32,10 @@ getOrders():Observable<Order[]>{
   const x=localStorage.getItem("userId")
   return this.http.get<Order[]>(`${this.apiUrl}/Buy?userId=${x}`); 
 }
+getAllOrders():Observable<Order[]>{
+  // const x=localStorage.getItem("userId")
+  return this.http.get<Order[]>(`${this.apiUrl}/Buy`); 
+}
 removeOrder(data: Order): Observable<Order[]> {
   const id = data.id; 
   return this.http.delete<Order[]>(`${this.apiUrl}/Buy/${id}`);

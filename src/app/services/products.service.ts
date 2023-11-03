@@ -16,6 +16,11 @@ getCategoryName(categoryId:number):Observable<Product[]>{
   return this.http.get<Product[]>(`${this.apiUrl}/Products?categoryId=${categoryId}`)
 
 }
+getProduct():Observable<Product[]>{
+  return this.http.get<Product[]>(`${this.apiUrl}/Products`)
+
+
+}
 getProductDetails(id: number):Observable<Product[]> {
   
   return this.http.get<Product[]>(`${this.apiUrl}/Products?id=${id}`);

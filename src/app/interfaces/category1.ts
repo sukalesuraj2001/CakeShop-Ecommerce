@@ -32,6 +32,10 @@ export interface Color{
     categoryName: string,
     categoryId: number
     images:string;
+    images1:string;
+    images2:string;
+    images3:string;
+    images4:string;
     delivery:string;
     id:number;
     size:number;
