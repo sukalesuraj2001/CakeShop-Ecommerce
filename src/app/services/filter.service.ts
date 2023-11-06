@@ -19,4 +19,16 @@ export class FilterService {
     return this.http.get<Product[]>(`${this.apiUrl}/Products?categoryName=${categoryName}`)
   }
 
+
+
+  getMin(): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.apiUrl}/Products?price_lte=500`);
+  }
+  getBet(): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.apiUrl}/Products?price_gte=300&price_lte=800`
+    );
+  }
+  getAbove(): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.apiUrl}/Products?price_gte=900`);
+  }
 }

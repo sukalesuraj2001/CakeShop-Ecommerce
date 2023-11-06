@@ -213,12 +213,15 @@
     .col-md-6 .text {
       font-size: 16px; 
     }
-  
+
+  img{
+    width: 100%;
+  }
     .size-chart span {
       width: 30px; 
       height: 30px;
-   
-      font-size: 12px;
+     
+      font-size: 14px;
     }
     .input-container {
         display: flex;
@@ -229,13 +232,22 @@
       .date-container {
         margin-right: 10px; /* Adjust the margin as needed to create spacing between the two input elements */
       }
-
+      .col-4 {
+        text-align: center; /* Center align the content in each column */
+        margin-bottom: 10px; /* Add margin between columns for spacing */
+      }
     
+      .myntra-button {
+        flex-direction: column; /* Change flex direction to column */
+      }
+    #whishlist{
+      display: none;
+    }
       
   
-    .myntra-button {
+    /* .myntra-button {
       display: flex;
-      flex-direction: column; /* Change flex direction to column */
+      flex-direction: column; 
       width: 12rem;
       height: 3rem;
       background-color: rgb(255, 62, 108);
@@ -249,7 +261,7 @@
       cursor: pointer;
       font-weight: 400;
       transition: background-color 0.2s;
-    }
+    } */
   }
   
   

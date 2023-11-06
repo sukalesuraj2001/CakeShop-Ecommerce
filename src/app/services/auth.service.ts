@@ -19,6 +19,11 @@ export class AuthService {
   userLogin(userData: any): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/User`, userData);
   }
+ 
+
+
+
+  
   // user login and registration Api end
 
   // profile api start

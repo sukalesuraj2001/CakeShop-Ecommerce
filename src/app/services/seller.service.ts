@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Register } from '../interfaces/category1';
+import { Product, Register } from '../interfaces/category1';
 import { Observable } from 'rxjs';
+import { Order } from '../interfaces/order';
+import { Profile } from '../interfaces/profileData';
 
 @Injectable({
   providedIn: 'root'
@@ -25,9 +27,9 @@ getProducts(){
   return this.http.get(`${this.apiUrl}/Product`);
 }
 
-removeProduct(itemId: number) {
-  return this.http.delete(`${this.apiUrl}/Product/${itemId}`);
-}
+// removeProduct(itemId: number) {
+//   return this.http.delete(`${this.apiUrl}/Product/${itemId}`);
+// }
 
 
 addProduct(data:any){
@@ -35,8 +37,22 @@ addProduct(data:any){
   return this.http.post(`${this.apiUrl}/Products`,data);
 }
 
-getOrders(data: any) {
-  return this.http.get(`${this.apiUrl}/Order?sellerId=${8}`, data);
+getSellerOrders() {
+  return this.http.get(`${this.apiUrl}/Order`);
+}
+getAllUsers(): Observable<Profile[]> {
+  const x = localStorage.getItem('userId');
+  return this.http.get<Profile[]>(`${this.apiUrl}/Profile`);
+}
+
+
+getUsers():Observable<Register[]>{
+  return this.http.get<Register[]>(`${this.apiUrl}/User`);
+
+}
+removeProduct(data: Product): Observable<Product[]> {
+  const id = data.id; 
+  return this.http.delete<Product[]>(`${this.apiUrl}/Products/${id}`);
 }
 
 

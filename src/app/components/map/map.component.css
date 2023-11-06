@@ -1,0 +1,8 @@
+#map {
+    height: 400px; /* Adjust the height as needed */
+    width: 100%;
+  }
+  #map {
+    z-index: 1; /* Ensure the map is displayed above other elements */
+  }
+  

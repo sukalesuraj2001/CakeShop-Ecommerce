@@ -9,13 +9,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown" dropdown>
-                        <a class="nav-link text-black" href="#" role="button" dropdownToggle>
-                            BIRTHDAY
+                    <li class="nav-item dropdown" dropdown *ngFor="let x of menus">
+                        <a class="nav-link text-black"   (click)="categoryName(x.categoryId)"  role="button" dropdownToggle>
+                        {{x.menu}}
                         </a>
                         
                     </li>
-                    <li class="nav-item dropdown" dropdown>
+                    <!-- <li class="nav-item dropdown" dropdown>
                         <a class="nav-link  text-black" href="#" role="button" dropdownToggle>
                             ANIVERSARY
                         </a>
@@ -46,7 +46,7 @@
                                 class="position-absolute top-0 mt-3  start-100 translate-middle badge rounded-pill text-danger">NEW</span>
                         </a>
                        
-                    </li>
+                    </li> -->
 
 
 
@@ -65,13 +65,13 @@
                         <ul class="dropdown-menu" id="profile">
 
                             <!-- <li><a class="dropdown-item text-black">Hello {{search}}</a></li> -->
-                            <p class="dropdown-item text-black fw-bold">Hello </p>
+                            <p class="dropdown-item text-black fw-bold">Hello {{firstname}} {{lastname}} </p>
                             <hr>
                             <li><a class="dropdown-item text-black" routerLink="/profile">Account</a></li>
                             <li><a class="dropdown-item text-black" routerLink="#">About</a></li>
                             <li>
-                            <li><a class="dropdown-item text-black" routerLink="user/login">Login</a></li>
-                            <li>
+                            <li *ngIf="islogin"><a class="dropdown-item text-black" routerLink="user/login">Login</a></li>
+                            <li *ngIf="!islogin">
                                 <a class="dropdown-item text-black" (click)="logout()">Logout</a>
                             </li>
                             <li class="nav-item">
@@ -98,7 +98,7 @@
                         <i class="bi bi-bag" routerLink="cart" ></i> <br>
                         <p class="icon-txt"  routerLink="cart"> Bag</p>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-
+                          {{counter}}
                         </span>
                     </a>
                     <!-- <p>Suraj</p> -->
@@ -110,9 +110,9 @@
 
 <!-- seller  navbar start -->
 <div *ngIf="isSeller">
-    <nav class="navbar navbar-expand-lg    shadow-lg p-3 mb-5 bg-body-white rounded">
+    <nav class="navbar navbar-expand-lg    shadow-lg p-3 mb-5 bg-body-white rounded" >
         <div class="container">
-            <h3 class="logo me-3" routerLink="#" (click)=" toggleSidebar()">Seller</h3>
+            <h3 class="logo me-3" routerLink="#" (click)=" toggleSidebar()">SweetCakes</h3>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -126,25 +126,25 @@
     </nav>
     <div class="sidebar  shadow-lg p-4 mb-5 bg-body-white rounded" [ngClass]="{ 'open': isSidebarOpen }">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown" routerLink="/seller/sellerhome" dropdown>
+            <li class="nav-item dropdown" routerLink="/seller/sellerhome" (click)=" toggleSidebar()" dropdown>
                 <a class="nav-link text-black" role="button" dropdownToggle>
-                  PROFILE
+                  DASHBOARD
                 </a>
                 
             </li>
-            <li class="nav-item dropdown" dropdown>
-                <a class="nav-link  text-black" role="button" dropdownToggle>
+            <li class="nav-item dropdown" dropdown >
+                <a class="nav-link  text-black" role="button" dropdownToggle (click)=" toggleSidebar()" routerLink="/seller/totalproduct">
                     TOTAL PRODUCTS
                 </a>
               
             </li>
-            <li class="nav-item dropdown" routerLink="/seller/addproduct" dropdown>
+            <li class="nav-item dropdown" routerLink="/seller/addproduct" dropdown (click)=" toggleSidebar()">
                 <a class="nav-link  text-black"  role="button" dropdownToggle>
                     ADD PRODUCTS
                 </a>
                
             </li>
-            <li class="nav-item dropdown" dropdown>
+            <!-- <li class="nav-item dropdown" dropdown>
                 <a class="nav-link  text-black" role="button" dropdownToggle>
                     CAKES
                 </a>
@@ -155,7 +155,7 @@
                     OCCASIONS
                 </a>
                 
-            </li>
+            </li> -->
             <li class="nav-item dropdown studio" (click)="sellerLogout()" routerLink="/" dropdown>
                 <a class="nav-link text-black" (click)=" toggleSidebar()" role="button" dropdownToggle>
                    LOGOUT

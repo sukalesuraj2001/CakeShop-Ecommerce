@@ -3,6 +3,7 @@ import { Product } from 'src/app/interfaces/category1';
 import { Order } from 'src/app/interfaces/order';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
+import { SellerService } from 'src/app/services/seller.service';
 
 @Component({
   selector: 'app-total-products',
@@ -11,7 +12,7 @@ import { ProductsService } from 'src/app/services/products.service';
 })
 export class TotalProductsComponent {
   orders:Product[]=[];
-  constructor(private product:ProductsService){}
+  constructor(private product:ProductsService,private seller:SellerService){}
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
@@ -20,8 +21,10 @@ export class TotalProductsComponent {
     })
   }
 
-  remove(id:number){
-    console.log("the data is "+id);
+  remove(data:Product){
+   this.seller.removeProduct(data).subscribe((res)=>{
+    alert("product remove successfully!")
+   })
     
   }
 

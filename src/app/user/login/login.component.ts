@@ -13,13 +13,16 @@ import { AuthService } from 'src/app/services/auth.service';
 export class LoginComponent {
   isUserLogginIn = new BehaviorSubject<boolean>(false);
 
+
   constructor(
   
     private router: Router,
     private auth:AuthService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   //  for register user
   namectrl = new FormControl('');
@@ -87,8 +90,9 @@ export class LoginComponent {
       lastName: formData.lastName || '',
       email: formData.email || '',
       password: formData.password || '',
+      date:new Date()
     };
-  
+    
     this.auth.userRegister(userData).subscribe((result) => {
       this.registrationSuccess = true;
       setTimeout(() => {

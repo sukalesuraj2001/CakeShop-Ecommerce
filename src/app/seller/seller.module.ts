@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { AddProductsComponent } from './add-products/add-products.component';
 import { ChartModule } from 'angular-highcharts';
 import { TotalProductsComponent } from './total-products/total-products.component';
+import { SellerOrderComponent } from './seller-order/seller-order.component';
+import { CustomersComponent } from './customers/customers.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { TotalProductsComponent } from './total-products/total-products.componen
     LoginComponent,
     HomeComponent,
     AddProductsComponent,
-    TotalProductsComponent
+    TotalProductsComponent,
+    SellerOrderComponent,
+    CustomersComponent
   ],
   imports: [
     CommonModule,

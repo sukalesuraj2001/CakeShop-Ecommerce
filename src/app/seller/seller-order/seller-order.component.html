@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="mt-5 mb-4">Total Orders</h4>
+            <table class="table align-middle mb-0 bg-white table table-hover">
+                <thead class="bg-light">
+                    <tr>
+                        <th>Name</th>
+
+                        <th>Address</th>
+                        <th>Product</th>
+                        <!-- <th>Product Name</th> -->
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Delivery Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let order of orderData">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="{{ order.userDetails[0].image}}" alt="" style="width: 45px; height: 45px"
+                                    class="rounded-circle" />
+                                <div class="ms-3">
+                                    <p class="fw-bold mb-1">{{ order.userDetails[0].firstName | titlecase}} {{
+                                        order.userDetails[0].lastName | titlecase}}</p>
+                                    <p class="text-muted mb-0">{{ order.userDetails[0].email}}</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="fw-normal mb-1">{{ order.userDetails[0].address1 | titlecase}}</p>
+                            <p class="fw-normal mb-1">{{ order.userDetails[0].city}}, {{ order.userDetails[0].state |
+                                titlecase}}
+                            </p>
+                            <!-- <p class="text-muted mb-0"></p> -->
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="{{ order.selectedItems[0].images}}" alt="" style="width: 45px; height: 45px"
+                                    class="rounded-circle" />
+                                <div class="ms-3">
+                                    <p class="fw-bold mb-1">{{ order.selectedItems[0].productName | titlecase}} </p>
+
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="text-muted mb-0">{{ order.selectedItems[0].qty}}</p>
+                        </td>
+                        <td>
+                            <p>{{ order.totalAmount | currency:"INR"}}</p>
+                        </td>
+                        <td>
+                            <p class="fw-bold">
+                                {{ order.selectedItems[0].date |date: 'MMM d, y'}}
+                            </p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

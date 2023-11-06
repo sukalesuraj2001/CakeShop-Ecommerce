@@ -13,6 +13,8 @@ import { ProductdetailsComponent } from './components/productdetails/productdeta
 import { CartComponent } from './components/cart/cart.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { OrderComponent } from './components/order/order.component'
+import { ToastrModule } from 'ngx-toastr';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,20 @@ import { OrderComponent } from './components/order/order.component'
     CartComponent,
     ProfileComponent,
     // WishlistComponent,
-    OrderComponent
+    OrderComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-   HttpClientModule
+   HttpClientModule,
+   ToastrModule.forRoot(),
+ 
+  
+   
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

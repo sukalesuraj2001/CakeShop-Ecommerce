@@ -4,6 +4,7 @@ import { Cart, Product } from 'src/app/interfaces/category1';
 import { AuthService } from 'src/app/services/auth.service';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-cart',
@@ -93,11 +94,16 @@ export class CartComponent {
 
   remove(item: Product) {
 
-    console.log("the remove product are"+JSON.stringify(item));
+    // console.log("the remove product are"+JSON.stringify(item));
 
     this.cart.removeCart(item.id).subscribe(
       (result) => {
-      alert("product deleted successfully!")
+        Swal.fire(
+          'Cool!',
+          'Product Successfully deleted from cart',
+          'success'
+        )
+     
       // window.location.reload()
         const index = this.cartItems.findIndex((cartItem) => cartItem.id === item.id);
         if (index !== -1) {
@@ -138,7 +144,21 @@ export class CartComponent {
 
     // Check if userDetails is empty
     if (this.users.length === 0) {
-      alert("User details are empty. Please fill in user details before placing an order.");
+
+      Swal.fire({
+        title: 'User details are empty. Please fill in user details before placing an order.',
+        icon: 'info',
+        html: 'Firstly Fill Your profile details and then Add products to cart',
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!',
+        confirmButtonAriaLabel: 'Thumbs up, great!',
+        cancelButtonText: '<i class="fa fa-thumbs-down"></i>',
+        cancelButtonAriaLabel: 'Thumbs down',
+      });
+     
+      this.router.navigate(['/profile'])
       return;
     }
 
@@ -182,7 +202,7 @@ export class CartComponent {
     // Calculate total MRP based on selected items
     this.totalmrp = this.cartItems.reduce((total, cartItem) => {
       if (cartItem.selected) {
-        total += cartItem.totalprice * cartItem.qty;
+        total += cartItem.totalprice * cartItem.qty*cartItem.size;
       }
       return total;
     }, 0);

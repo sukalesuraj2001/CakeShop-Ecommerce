@@ -69,7 +69,8 @@ export interface Register{
     firstName:string;
     lastName:string;
     email:string;
-    password:string
+    password:string;
+    date?: Date; 
 }
 export interface Login{
    

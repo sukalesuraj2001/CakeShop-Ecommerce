@@ -62,46 +62,42 @@ export class ProfileComponent {
     firstName: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
-    mobileNumber: new FormControl(''),
-    address1: new FormControl(''),
+    mobileNumber: new FormControl('', Validators.required),
+    address1: new FormControl('', Validators.required),
     // address2: new FormControl(''),
-    city: new FormControl(''),
-    state: new FormControl(''),
-    image: new FormControl(''),
+    city: new FormControl('', Validators.required),
+    state: new FormControl('', Validators.required),
+    image: new FormControl('', Validators.required),
   });
 
   formsubmit(data: Partial<Profile>): void {
     // Check if 'userId' already exists in localStorage
     const existingUserId = localStorage.getItem("userId");
   
-    if (existingUserId) {
+
       // Check if the provided 'userId' matches the existing one
       if (existingUserId === data.userId) {
         alert("Profile already exists. You can edit your profile.");
       } else {
-        alert("A different profile is already associated with this user. You cannot create a new profile.");
-      }
-    } else {
-      // If 'userId' doesn't exist in localStorage, set it and create the profile
-      localStorage.setItem("userId", data.userId || "");
-      this.auth.addProfile(data as Profile).subscribe((res) => {
-        alert("Profile Created Successfully!");
-        window.location.reload();
-      });
-    }
-  }
+        data.userId = localStorage.getItem('userId') || '';
+        this.auth.addProfile(data as Profile).subscribe((res) => {
+          alert("Profile Created Successfully!");
+          window.location.reload();
+        });      }
+    } 
+  
   
 
   updateProfiles = new FormGroup({
     firstName: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
-    mobileNumber: new FormControl(''),
-    address1: new FormControl(''),
+    mobileNumber: new FormControl('', Validators.required),
+    address1: new FormControl('', Validators.required),
   
-    city: new FormControl(''),
-    state: new FormControl(''),
-    image: new FormControl(''),
+    city: new FormControl('', Validators.required),
+    state: new FormControl('', Validators.required),
+    image: new FormControl('', Validators.required),
   });
 
   updateProfile(data: Partial<Profile>): void {

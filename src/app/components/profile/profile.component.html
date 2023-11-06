@@ -168,12 +168,12 @@
 
               <div class="form-group">
                 <label for="productImage">Profile Image</label>
-                <input type="file" id="productImage" class="form-control" formControlName="image" accept="image/*"
+                <input type="text" id="productImage" class="form-control" formControlName="image" accept="image/*"
                   required="image" placeholder="Add  Image URL">
               </div>
 
-              <button type="submit" class="btn btn-primary btn-block mt-4">Create Profile</button>
-              <button class="btn btn-secondary ms-3 mt-3" (click)="toggleEditForm()">Edit Profile</button>
+              <button type="submit" class="btn btn-primary btn-block mt-4 mx-2" [disabled]="!profileForm.valid">Create Profile</button>
+              <button class="btn btn-primary btn-block mt-4" (click)="toggleEditForm()">Edit Profile</button>
             </form>
 
             <form class="example-form mt-4 p-4" *ngIf="editMode" (ngSubmit)="updateProfile(updateProfiles.value)"
@@ -231,12 +231,12 @@
 
               <div class="form-group">
                 <label for="editImage">Profile Image</label>
-                <input type="file" id="editImage" name="editImage" [(ngModel)]="data.image" formControlName="image"
+                <input type="text" id="editImage" name="editImage" [(ngModel)]="data.image" formControlName="image"
                   class="form-control" accept="image/*" required="image" placeholder="Add Profile Image URL">
               </div>
 
-              <button type="submit" class="btn btn-primary btn-block mt-4">Save Changes</button>
-              <button class="btn btn-secondary ms-3 mt-3" (click)="toggleEditForm()">Cancel</button>
+              <button type="submit" class="btn btn-primary btn-block mt-4 mx-2" >Save Changes</button>
+              <button class="btn btn-primary btn-block mt-4" (click)="toggleEditForm()">Cancel</button>
             </form>
 
           </div>

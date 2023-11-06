@@ -97,7 +97,7 @@
     <div class="col-md-4 filter">
         <div class="button">
             <p>FILTERS </p>
-            <p class="clear">CLEAR ALL</p>
+            <p class="clear" (click)="clear()" >CLEAR ALL</p>
         </div>
         <hr>
 
@@ -157,19 +157,19 @@
             <p class=" price fw-medium">PRICE</p>
             <div class="under mt-3">
                 <input class="form-check-input mt-1" type="radio" name="wearType" id="300">
-                <label class="form-check-label fw-medium" for="300">
-                    Under 300
+                <label class="form-check-label fw-medium" (click)="under()" for="300">
+                    Under 500
                 </label>
             </div>
             <div class="bet">
                 <input class="form-check-input mt-1" type="radio" name="wearType" id="300 to 800">
-                <label class="form-check-label fw-medium" for="300 to 800">
+                <label class="form-check-label fw-medium" (click)="between()" for="300 to 800">
                     Rs.300 to Rs.800
                 </label>
             </div>
             <div class="max">
                 <input class="form-check-input mt-1" type="radio" name="wearType" id="max">
-                <label class="form-check-label fw-medium" for="max">
+                <label class="form-check-label fw-medium" (click)="above()" for="max">
                     Above 900
                 </label>
             </div>

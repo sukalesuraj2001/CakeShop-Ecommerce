@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from 'src/app/interfaces/category1';
+import { ExploresService } from 'src/app/services/explores.service';
 import { FilterService } from 'src/app/services/filter.service';
 import { ProductsService } from 'src/app/services/products.service';
 
@@ -13,7 +14,7 @@ export class ProductsComponent {
   categoryId:number=0
   products:Product[]=[]
 constructor(private activate:ActivatedRoute,private product:ProductsService,private router:Router,
-  private filter:FilterService){
+  private filter:FilterService,){
   this.activate.params.subscribe((res:any)=>{
   
   this.categoryId=res.categoryId
@@ -43,6 +44,32 @@ chocolate(categoryName:string){
   })
 
 }
+
+
+under(){
+  this.filter.getMin().subscribe((res:any)=>{
+    console.log("the data is"+JSON.stringify(res));
+    this.products=res
+    
+  })
+}
+
+between(){
+  this.filter.getBet().subscribe((res:any)=>{
+    this.products=res
+  })
+}
+above(){
+  this.filter.getAbove().subscribe((res:any)=>{
+     this.products=res
+  })
+}
+clear(){
+  window.location.reload()
+}
+
+// filter section start
+
 
 
 

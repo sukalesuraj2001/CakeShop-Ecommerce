@@ -1,0 +1,15 @@
+.table{
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    table {
+        font-size: 14px; 
+    }
+
+}
