@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Product } from 'src/app/interfaces/category1';
 import { ExploresService } from 'src/app/services/explores.service';
 import { FilterService } from 'src/app/services/filter.service';
@@ -13,22 +13,42 @@ import { ProductsService } from 'src/app/services/products.service';
 export class ProductsComponent {
   categoryId:number=0
   products:Product[]=[]
-constructor(private activate:ActivatedRoute,private product:ProductsService,private router:Router,
-  private filter:FilterService,){
-  this.activate.params.subscribe((res:any)=>{
+  searchKey:string=""
+  constructor(
+    private activate: ActivatedRoute,
+    private product: ProductsService,
+    private router: Router,
+    private filter: FilterService,
+  ) {
+    this.activate.paramMap.subscribe((params: ParamMap | null) => {
+      if (params && params.has('categoryId')) {
+        const categoryIdString = params.get('categoryId');
+        this.categoryId = categoryIdString ? +categoryIdString : 0; // Use 0 as a default if categoryId is not a valid number
+        console.log("the categoryId is" + this.categoryId);
+        this.getProduct(this.categoryId);
+      }
+    });
+  }
   
-  this.categoryId=res.categoryId
   
-})
-console.log("the products are"+JSON.stringify(this.categoryId));
-this.getProduct(this.categoryId)
-}
+
+
+
+
 getProduct(categoryId:number){
 this.product.getCategoryName(this.categoryId).subscribe((res)=>{
 this.products=res
 })
 }
 
+
+// ngOnInit(): void {
+//   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+//   //Add 'implements OnInit' to the class.
+//   this.product.getAllData().subscribe((res)=>{
+//     this.products=res
+//   })
+// }
 
 productDetails(id:number){
  

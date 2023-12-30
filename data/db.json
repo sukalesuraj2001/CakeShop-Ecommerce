@@ -53,6 +53,22 @@
       "password": "Nilesh@2001",
       "date": "2023-11-06T08:22:31.567Z",
       "id": 4
+    },
+    {
+      "firstName": "jayant",
+      "lastName": "Pawar",
+      "email": "jayant@gmail.com",
+      "password": "Jayant@2001",
+      "date": "2023-11-08T11:56:09.328Z",
+      "id": 5
+    },
+    {
+      "firstName": "balaji ",
+      "lastName": "Kamble",
+      "email": "balaji@gmail.com",
+      "password": "Balaji@100",
+      "date": "2023-12-13T06:03:13.508Z",
+      "id": 6
     }
   ],
   "seller": [
@@ -65,22 +81,6 @@
     }
   ],
   "Products": [
-    {
-      "productName": "Decorated Chocolate Truffle Cake Half Kg",
-      "categoryId": "20",
-      "categoryName": "Chocolate Cake",
-      "price": 509,
-      "totalprice": 509,
-      "images": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_1.jpg",
-      "images1": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_1.jpg",
-      "images2": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_1.jpg",
-      "images3": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_1.jpg",
-      "images4": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_1.jpg",
-      "qty": 1,
-      "rating": 4.2,
-      "sellerId": null,
-      "id": 2
-    },
     {
       "productName": "Chocolate Caramel Fudge Cake Half Kg",
       "categoryId": "14",
@@ -1148,61 +1148,137 @@
       "userId": "3"
     },
     {
-      "productName": "Cricket Pitch Cake 3kg Vanilla",
-      "categoryId": "30",
-      "categoryName": "above 1999 Cakes",
-      "price": 3799,
-      "totalprice": 3799,
-      "images": "https://www.fnp.com/images/pr/l/v20170720152506/cricket-pitch-cake-3kg-vanilla_1.jpg",
-      "images1": "https://www.fnp.com/images/pr/l/v20170720152506/cricket-pitch-cake-3kg-vanilla_1.jpg",
-      "images2": "https://www.fnp.com/images/pr/l/v20170720152506/cricket-pitch-cake-3kg-vanilla_1.jpg",
-      "images3": "https://www.fnp.com/images/pr/l/v20170720152506/cricket-pitch-cake-3kg-vanilla_1.jpg",
-      "images4": "https://www.fnp.com/images/pr/l/v20170720152506/cricket-pitch-cake-3kg-vanilla_1.jpg",
+      "productName": "Cream Drop Chocolate Cake Half Kg",
+      "categoryId": "14",
+      "categoryName": "Same Day Delivery Cakes",
+      "price": 599,
+      "totalprice": 599,
+      "images": "https://www.fnp.com/images/pr/l/v20221205202830/cream-drop-chocolate-cake-half-kg_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20221205202833/cream-drop-chocolate-cake-half-kg_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20221205202834/cream-drop-chocolate-cake-half-kg_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20221205202836/cream-drop-chocolate-cake-half-kg_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20190802125907/cream-drop-chocolate-cake-half-kg_5.jpg",
       "qty": 1,
-      "rating": 5,
+      "rating": 4.3,
       "sellerId": null,
-      "id": 53,
+      "id": 4,
       "size": 3,
-      "date": "2023-11-08",
+      "date": "2023-11-21",
+      "userId": "5"
+    },
+    {
+      "productName": "Fruit Overload Cake- Half Kg Eggless",
+      "categoryId": "18",
+      "categoryName": "Birthday Cake",
+      "price": 699,
+      "totalprice": 699,
+      "images": "https://www.fnp.com/images/pr/l/v20230926124759/fruit-overload-cake-half-kg-eggless_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20221118185234/fruit-overload-cake-half-kg-eggless_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20221118185235/fruit-overload-cake-half-kg-eggless_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20221118185235/fruit-overload-cake-half-kg-eggless_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20221118185235/fruit-overload-cake-half-kg-eggless_5.jpg",
+      "qty": 1,
+      "rating": 4,
+      "sellerId": null,
+      "id": 27,
+      "size": 2,
+      "date": "2023-12-26",
       "userId": "1"
     },
     {
-      "productName": "Decorated Chocolate Truffle Cake Half Kg",
-      "categoryId": "14",
-      "categoryName": "Same Day Delivery Cakes",
-      "price": 1500,
-      "totalprice": 1500,
-      "images": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_2.jpg",
-      "images1": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_2.jpg",
-      "images2": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_2.jpg",
-      "images3": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_2.jpg",
-      "images4": "https://www.fnp.com/images/pr/l/v20221221115007/decorated-chocolate-truffle-cake-half-kg_2.jpg",
+      "productName": "Chocolate Cream Cake Half kg",
+      "categoryId": "15",
+      "categoryName": "Midnight Delivery Cakes",
+      "price": 599,
+      "totalprice": 599,
+      "images": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_5.jpg",
+      "qty": 1,
+      "rating": 3.8,
+      "sellerId": null,
+      "id": 6,
+      "size": 3,
+      "date": "2023-12-19",
+      "userId": "1"
+    },
+    {
+      "productName": "Heavenly Butterscotch Cream Cake- Half Kg Eggless",
+      "categoryId": "18",
+      "categoryName": "Birthday Cake",
+      "price": 549,
+      "totalprice": 549,
+      "images": "https://www.fnp.com/images/pr/l/v20221118185238/heavenly-butterscotch-cream-cake-half-kg-eggless_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20221118185238/heavenly-butterscotch-cream-cake-half-kg-eggless_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20221118185239/heavenly-butterscotch-cream-cake-half-kg-eggless_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20221118185239/heavenly-butterscotch-cream-cake-half-kg-eggless_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20221118185239/heavenly-butterscotch-cream-cake-half-kg-eggless_5.jpg",
       "qty": 1,
       "rating": 4.5,
       "sellerId": null,
-      "id": 1,
-      "size": 1,
-      "date": "2023-11-15",
+      "id": 7,
+      "size": 3,
+      "date": "2023-12-21",
       "userId": "1"
     },
     {
-      "productName": "Red Velvet Heart Cake Half Kg",
-      "categoryId": "32",
-      "categoryName": "Red",
-      "price": 899,
-      "totalprice": 899,
-      "images": "https://www.fnp.com/images/pr/l/v20210701022540/red-velvet-heart-cake-half-kg_1.jpg",
-      "images1": "https://www.fnp.com/images/pr/l/v20210701022540/red-velvet-heart-cake-half-kg_2.jpg",
-      "images2": "https://www.fnp.com/images/pr/l/v20210701022540/red-velvet-heart-cake-half-kg_3.jpg",
-      "images3": "https://www.fnp.com/images/pr/l/v20210701022541/red-velvet-heart-cake-half-kg_4.jpg",
-      "images4": "https://www.fnp.com/images/pr/l/v20210701022541/red-velvet-heart-cake-half-kg_5.jpg",
+      "productName": "Dark Chocolate Truffle Bliss- Half Kg",
+      "categoryId": "17",
+      "categoryName": "Brand New Cakes",
+      "price": 699,
+      "totalprice": 699,
+      "images": "https://www.fnp.com/images/pr/l/v20230928181536/dark-chocolate-truffle-bliss-half-kg_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20230928181536/dark-chocolate-truffle-bliss-half-kg_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_5.jpg",
       "qty": 1,
-      "rating": 5,
+      "rating": 4.5,
       "sellerId": null,
-      "id": 56,
-      "size": 3,
-      "date": "2023-11-15",
-      "userId": "1"
+      "id": 22,
+      "size": 4,
+      "date": "2023-12-19",
+      "userId": "6"
+    },
+    {
+      "productName": "Floral Vanilla Cream Cake Half Kg",
+      "categoryId": "24",
+      "categoryName": "Vanila Cakes",
+      "price": 599,
+      "totalprice": 599,
+      "images": "https://www.fnp.com/images/pr/l/v20221205202931/floral-vanilla-cream-cake-half-kg_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20221205202931/floral-vanilla-cream-cake-half-kg_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20221205202932/floral-vanilla-cream-cake-half-kg_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20221205202932/floral-vanilla-cream-cake-half-kg_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20221205202932/floral-vanilla-cream-cake-half-kg_5.jpg",
+      "qty": 1,
+      "rating": 4.5,
+      "sellerId": null,
+      "id": 40,
+      "size": 1,
+      "date": "2023-12-27",
+      "userId": "5"
+    },
+    {
+      "productName": "Chocolaty Truffle Cake Half Kg",
+      "categoryId": "16",
+      "categoryName": "Best Seller Cakes",
+      "price": 599,
+      "totalprice": 599,
+      "images": "https://www.fnp.com/images/pr/x/v20221214202702/chocolaty-truffle-cake-half-kg_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20221214202702/chocolaty-truffle-cake-half-kg_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20221214202702/chocolaty-truffle-cake-half-kg_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20221214202702/chocolaty-truffle-cake-half-kg_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20221214202702/chocolaty-truffle-cake-half-kg_5.jpg",
+      "qty": 1,
+      "rating": 3.4,
+      "sellerId": null,
+      "id": 20,
+      "size": 6,
+      "date": "2023-12-28",
+      "userId": "5"
     }
   ],
   "profile": [
@@ -1241,6 +1317,18 @@
       "image": "https://image.shutterstock.com/image-photo/head-shot-portrait-close-smiling-260nw-1714666150.jpg",
       "userId": "4",
       "id": 3
+    },
+    {
+      "firstName": "jayant",
+      "lastName": "pawar",
+      "email": "jayant@gmail.com",
+      "mobileNumber": "6262176245",
+      "address1": "Pune",
+      "city": "Pune City",
+      "state": "Maharashtra",
+      "image": "https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1702944000&semt=ais",
+      "userId": "5",
+      "id": 5
     }
   ],
   "Wishlist": [
@@ -1255,6 +1343,57 @@
       "id": 1,
       "qty": 1,
       "totalprice": 1500,
+      "userId": "1"
+    },
+    {
+      "productName": "Dark Chocolate Truffle Bliss- Half Kg",
+      "categoryId": "17",
+      "categoryName": "Brand New Cakes",
+      "price": 699,
+      "totalprice": 699,
+      "images": "https://www.fnp.com/images/pr/l/v20230928181536/dark-chocolate-truffle-bliss-half-kg_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20230928181536/dark-chocolate-truffle-bliss-half-kg_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_5.jpg",
+      "qty": 1,
+      "rating": 4.5,
+      "sellerId": null,
+      "id": 22,
+      "userId": "5"
+    },
+    {
+      "productName": "Chocolate Cream Cake Half kg",
+      "categoryId": "15",
+      "categoryName": "Midnight Delivery Cakes",
+      "price": 599,
+      "totalprice": 599,
+      "images": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20221118185140/chocolate-cream-cake-half-kg_5.jpg",
+      "qty": 1,
+      "rating": 3.8,
+      "sellerId": null,
+      "id": 6,
+      "userId": "1"
+    },
+    {
+      "productName": "Creamy Chocolate Dream Cake- Half Kg",
+      "categoryId": "17",
+      "categoryName": "Brand New Cakes",
+      "price": 649,
+      "totalprice": 649,
+      "images": "https://www.fnp.com/images/pr/l/v20230928181509/creamy-chocolate-dream-cake-half-kg_1.jpg",
+      "images1": "https://www.fnp.com/images/pr/l/v20230928181509/creamy-chocolate-dream-cake-half-kg_2.jpg",
+      "images2": "https://www.fnp.com/images/pr/l/v20230928181509/creamy-chocolate-dream-cake-half-kg_3.jpg",
+      "images3": "https://www.fnp.com/images/pr/l/v20230928181509/creamy-chocolate-dream-cake-half-kg_4.jpg",
+      "images4": "https://www.fnp.com/images/pr/l/v20230928181509/creamy-chocolate-dream-cake-half-kg_2.jpg",
+      "qty": 1,
+      "rating": 5,
+      "sellerId": null,
+      "id": 24,
       "userId": "1"
     }
   ],
@@ -1662,6 +1801,258 @@
         }
       ],
       "id": 11
+    },
+    {
+      "userId": "1",
+      "userDetails": [
+        {
+          "firstName": "Suraj",
+          "lastName": "Sukale",
+          "email": "srsukale20@gmail.com",
+          "mobileNumber": "9112768829",
+          "address1": "Balaji Heights Kharadi Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/social-media-profile-photos-3.jpg",
+          "userId": "1",
+          "id": 1
+        }
+      ],
+      "orderID": 9775,
+      "totalAmount": 1298.2,
+      "selectedItems": [
+        {
+          "productName": "Chocolate Rose Designer Cake- Half Kg",
+          "categoryId": "14",
+          "categoryName": "Same Day Delivery Cakes",
+          "price": 699,
+          "totalprice": 699,
+          "images": "https://www.fnp.com/images/pr/l/v20221205202803/chocolate-rose-designer-cake-half-kg_1.jpg",
+          "images1": "https://www.fnp.com/images/pr/l/v20221205202803/chocolate-rose-designer-cake-half-kg_2.jpg",
+          "images2": "https://www.fnp.com/images/pr/l/v20221205202807/chocolate-rose-designer-cake-half-kg_3.jpg",
+          "images3": "https://www.fnp.com/images/pr/l/v20210111034300/chocolate-rose-designer-cake-half-kg_5.jpg",
+          "images4": "https://www.fnp.com/images/pr/l/v20210111034300/chocolate-rose-designer-cake-half-kg_6.jpg",
+          "qty": 2,
+          "rating": 5,
+          "sellerId": null,
+          "id": 10,
+          "size": 1,
+          "date": "2023-11-16",
+          "userId": "1",
+          "selected": true
+        }
+      ],
+      "id": 15
+    },
+    {
+      "userId": "6",
+      "userDetails": [
+        {
+          "firstName": "Balaji",
+          "lastName": "Kamble",
+          "email": "balaji@gmail.com",
+          "mobileNumber": "9874563210",
+          "address1": "Vimannagar Pune",
+          "city": "Pune",
+          "state": "MAharastra",
+          "image": "data:image/jpeg;base64,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",
+          "userId": "6",
+          "id": 5
+        }
+      ],
+      "orderID": 2950,
+      "totalAmount": 669.1,
+      "selectedItems": [
+        {
+          "productName": "Dark Chocolate Truffle Bliss- Half Kg",
+          "categoryId": "17",
+          "categoryName": "Brand New Cakes",
+          "price": 699,
+          "totalprice": 699,
+          "images": "https://www.fnp.com/images/pr/l/v20230928181536/dark-chocolate-truffle-bliss-half-kg_1.jpg",
+          "images1": "https://www.fnp.com/images/pr/l/v20230928181536/dark-chocolate-truffle-bliss-half-kg_2.jpg",
+          "images2": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_3.jpg",
+          "images3": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_4.jpg",
+          "images4": "https://www.fnp.com/images/pr/l/v20230928181537/dark-chocolate-truffle-bliss-half-kg_5.jpg",
+          "qty": 1,
+          "rating": 4.5,
+          "sellerId": null,
+          "id": 22,
+          "size": 4,
+          "date": "2023-12-19",
+          "userId": "6",
+          "selected": true
+        }
+      ],
+      "id": 16
+    },
+    {
+      "userId": "5",
+      "userDetails": [
+        {
+          "firstName": "jayant",
+          "lastName": "pawar",
+          "email": "jayant@gmail.com",
+          "mobileNumber": "6262176245",
+          "address1": "Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://tse3.mm.bing.net/th?id=OIP.lkVN1WDlcV2jQCq-9LT7-wHaIJ&pid=Api&P=0&h=180",
+          "userId": "5",
+          "id": 4
+        }
+      ],
+      "orderID": 9301,
+      "totalAmount": 1657.3,
+      "selectedItems": [
+        {
+          "productName": "Cream Drop Chocolate Cake Half Kg",
+          "categoryId": "14",
+          "categoryName": "Same Day Delivery Cakes",
+          "price": 599,
+          "totalprice": 599,
+          "images": "https://www.fnp.com/images/pr/l/v20221205202830/cream-drop-chocolate-cake-half-kg_1.jpg",
+          "images1": "https://www.fnp.com/images/pr/l/v20221205202833/cream-drop-chocolate-cake-half-kg_2.jpg",
+          "images2": "https://www.fnp.com/images/pr/l/v20221205202834/cream-drop-chocolate-cake-half-kg_3.jpg",
+          "images3": "https://www.fnp.com/images/pr/l/v20221205202836/cream-drop-chocolate-cake-half-kg_4.jpg",
+          "images4": "https://www.fnp.com/images/pr/l/v20190802125907/cream-drop-chocolate-cake-half-kg_5.jpg",
+          "qty": 1,
+          "rating": 4.3,
+          "sellerId": null,
+          "id": 4,
+          "size": 3,
+          "date": "2023-11-21",
+          "userId": "5",
+          "selected": true
+        }
+      ],
+      "id": 17
+    },
+    {
+      "userId": "5",
+      "userDetails": [
+        {
+          "firstName": "jayant",
+          "lastName": "pawar",
+          "email": "jayant@gmail.com",
+          "mobileNumber": "6262176245",
+          "address1": "Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://tse3.mm.bing.net/th?id=OIP.lkVN1WDlcV2jQCq-9LT7-wHaIJ&pid=Api&P=0&h=180",
+          "userId": "5",
+          "id": 4
+        }
+      ],
+      "orderID": 9048,
+      "totalAmount": 19447.6,
+      "selectedItems": [
+        {
+          "productName": "Chocolaty Truffle Cake Half Kg",
+          "categoryId": "16",
+          "categoryName": "Best Seller Cakes",
+          "price": 599,
+          "totalprice": 599,
+          "images": "https://www.fnp.com/images/pr/x/v20221214202702/chocolaty-truffle-cake-half-kg_1.jpg",
+          "images1": "https://www.fnp.com/images/pr/l/v20221214202702/chocolaty-truffle-cake-half-kg_2.jpg",
+          "images2": "https://www.fnp.com/images/pr/l/v20221214202702/chocolaty-truffle-cake-half-kg_3.jpg",
+          "images3": "https://www.fnp.com/images/pr/l/v20221214202702/chocolaty-truffle-cake-half-kg_4.jpg",
+          "images4": "https://www.fnp.com/images/pr/l/v20221214202702/chocolaty-truffle-cake-half-kg_5.jpg",
+          "qty": 6,
+          "rating": 3.4,
+          "sellerId": null,
+          "id": 20,
+          "size": 6,
+          "date": "2023-12-28",
+          "userId": "5",
+          "selected": true
+        }
+      ],
+      "id": 18
+    },
+    {
+      "userId": "5",
+      "userDetails": [
+        {
+          "firstName": "jayant",
+          "lastName": "pawar",
+          "email": "jayant@gmail.com",
+          "mobileNumber": "6262176245",
+          "address1": "Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://tse3.mm.bing.net/th?id=OIP.lkVN1WDlcV2jQCq-9LT7-wHaIJ&pid=Api&P=0&h=180",
+          "userId": "5",
+          "id": 4
+        }
+      ],
+      "orderID": 3863,
+      "totalAmount": 4443.7,
+      "selectedItems": [
+        {
+          "productName": "Cherry Kissed Black Forest Cake- Half Kg",
+          "categoryId": "15",
+          "categoryName": "Midnight Delivery Cakes",
+          "price": 699,
+          "totalprice": 699,
+          "images": "https://www.fnp.com/images/pr/l/v20230928181444/cherry-kissed-black-forest-cake-half-kg_1.jpg",
+          "images1": "https://www.fnp.com/images/pr/l/v20230928181444/cherry-kissed-black-forest-cake-half-kg_2.jpg",
+          "images2": "https://www.fnp.com/images/pr/l/v20230928181444/cherry-kissed-black-forest-cake-half-kg_3.jpg",
+          "images3": "https://www.fnp.com/images/pr/l/v20230928181444/cherry-kissed-black-forest-cake-half-kg_4.jpg",
+          "images4": "https://www.fnp.com/images/pr/l/v20230928181444/cherry-kissed-black-forest-cake-half-kg_2.jpg",
+          "qty": 7,
+          "rating": 4.1,
+          "sellerId": null,
+          "id": 14,
+          "size": 1,
+          "date": "2023-12-28",
+          "userId": "5",
+          "selected": true
+        }
+      ],
+      "id": 19
+    },
+    {
+      "userId": "5",
+      "userDetails": [
+        {
+          "firstName": "jayant",
+          "lastName": "pawar",
+          "email": "jayant@gmail.com",
+          "mobileNumber": "6262176245",
+          "address1": "Pune",
+          "city": "Pune City",
+          "state": "Maharashtra",
+          "image": "https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1702944000&semt=ais",
+          "userId": "5",
+          "id": 5
+        }
+      ],
+      "orderID": 2506,
+      "totalAmount": 3274.6,
+      "selectedItems": [
+        {
+          "productName": "Cream Drop Chocolate Cake Half Kg",
+          "categoryId": "14",
+          "categoryName": "Same Day Delivery Cakes",
+          "price": 599,
+          "totalprice": 599,
+          "images": "https://www.fnp.com/images/pr/l/v20221205202830/cream-drop-chocolate-cake-half-kg_1.jpg",
+          "images1": "https://www.fnp.com/images/pr/l/v20221205202833/cream-drop-chocolate-cake-half-kg_2.jpg",
+          "images2": "https://www.fnp.com/images/pr/l/v20221205202834/cream-drop-chocolate-cake-half-kg_3.jpg",
+          "images3": "https://www.fnp.com/images/pr/l/v20221205202836/cream-drop-chocolate-cake-half-kg_4.jpg",
+          "images4": "https://www.fnp.com/images/pr/l/v20190802125907/cream-drop-chocolate-cake-half-kg_5.jpg",
+          "qty": 2,
+          "rating": 4.3,
+          "sellerId": null,
+          "id": 4,
+          "size": 3,
+          "date": "2023-11-21",
+          "userId": "5",
+          "selected": true
+        }
+      ],
+      "id": 20
     }
   ]
 }

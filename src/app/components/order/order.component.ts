@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Order } from 'src/app/interfaces/order';
 import { CartService } from 'src/app/services/cart.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-order',
@@ -29,7 +30,7 @@ orderData:any
   this.cart.getOrders().subscribe((res) => {
     this.orderData=res
     
-    console.log("The data of order is:"+JSON.stringify(this.orderData));
+    // console.log("The data of order is:"+JSON.stringify(this.orderData));
     res.forEach((order, index) => {
       // console.log(`Order ${index + 1}:`);
       // console.log(`Purchase Date: ${order.purchaseDate}`);
@@ -56,7 +57,7 @@ orderData:any
   
       // Access and log selected items
       if (Array.isArray(order.selectedItems)) {
-        console.log("Selected Items:");
+        // console.log("Selected Items:");
         order.selectedItems.forEach((item, itemIndex) => {
           this.userImage=item.images
           // console.log(`Item ${itemIndex + 1}:`);
@@ -66,14 +67,14 @@ orderData:any
           // console.log(`Category: ${item.category}`);
           // console.log(`Price: ${item.price}`);
           // console.log(`Total Price: ${item.totalprice}`);
-          console.log(`Image of items: ${item.date}`);
+          // console.log(`Image of items: ${item.date}`);
           
           // Add more fields as needed
         });
       }
       
-      console.log(`ID: ${order.id}`);
-      console.log(); 
+      // console.log(`ID: ${order.id}`);
+      // console.log(); 
     });
   });
   
@@ -86,7 +87,7 @@ orderData:any
 
 
   this.cart.removeOrder(data).subscribe((res)=>{
-    alert("Your Order is Successfully Canceled")
+    Swal.fire("Your Order is Successfully Canceled")
     this.router.navigate(['/'])
   })
  }

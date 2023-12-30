@@ -1,40 +1,41 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-2">
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti minima blanditiis pariatur
-                tenetur totam distinctio culpa facilis, neque ipsam harum nam possimus odit provident libero similique
-                optio magnam. Mollitia voluptatum nostrum excepturi tempore?</p>
-        </div>
-        <div class="col-md-2">
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti minima blanditiis pariatur
-                tenetur totam distinctio culpa facilis, neque ipsam harum nam possimus odit provident libero similique
-                optio magnam. Mollitia voluptatum nostrum excepturi tempore?</p>
-        </div>
-        <div class="col-md-2">
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti minima blanditiis pariatur
-                tenetur totam distinctio culpa facilis, neque ipsam harum nam possimus odit provident libero similique
-                optio magnam. Mollitia voluptatum nostrum excepturi tempore?</p>
-        </div>
-        <div class="col-md-2">
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti minima blanditiis pariatur
-                tenetur totam distinctio culpa facilis, neque ipsam harum nam possimus odit provident libero similique
-                optio magnam. Mollitia voluptatum nostrum excepturi tempore?</p>
-        </div>
-        <div class="col-md-2">
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti minima blanditiis pariatur
-                tenetur totam distinctio culpa facilis, neque ipsam harum nam possimus odit provident libero similique
-                optio magnam. Mollitia voluptatum nostrum excepturi tempore?</p>
-        </div>
-        <div class="col-md-2">
-            <h2>Lorem, ipsum.</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti minima blanditiis pariatur
-                tenetur totam distinctio culpa facilis, neque ipsam harum nam possimus odit provident libero similique
-                optio magnam. Mollitia voluptatum nostrum excepturi tempore?</p>
+<footer class="footer mt-5" [@fadeIn]>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>About SweetCakes</h4>
+                <p>Welcome to SweetCakes, your one-stop shop for delicious pastries and desserts. We're passionate about providing you with the best sweets that bring joy to your life.</p>
+
+                <div class="social-media mt-5">
+                    <p class="fw-bold">Follow Us:</p>
+                    <div class="icon d-flex">
+                        <span><i class="fa-brands fa-x-twitter fa-xl"  style="color: red;"></i></span>
+                        <span><i class="fa-brands fa-youtube fa-xl mx-2" style="color: red;"></i></span>
+                        <span><i class="fa-brands fa-facebook fa-xl mx-2" style="color: red;"></i></span>
+                        <span><i class="fa-brands fa-instagram fa-xl mx-2" style="color: red;"></i></span>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a (click)="navigateTo('')">Home</a></li>
+                    
+                  </ul>
+                  
+            </div>
+            <div class="col-md-3">
+                <h4>Contact Us</h4>
+                <address>
+                    <p>123 Sweet Street</p>
+                    <p>Cityville, CA 12345</p>
+                    <p>Email: <a href="mailto:info@sweetcakes.com">info@sweetcakes.com</a></p>
+                </address>
+            </div>
         </div>
     </div>
-</div>
+    <hr>
+    <div class="text-center">
+        <p>&copy; {{ currentYear }} SweetCakes. All rights reserved.</p>
+    </div>
+</footer>

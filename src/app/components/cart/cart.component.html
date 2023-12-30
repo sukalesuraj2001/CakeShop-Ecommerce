@@ -1,25 +1,12 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <hr>
 <div class="container container-with-space">
   <div class="row">
     <div class="col-md-8  content">
       <div class="customer" *ngFor="let x of users">
-        <p>Deliver to : <b>{{x.firstName}} {{x.lastName}}</b> </p>
-        <p class="address">{{x.address1}}</p>
+        <p>Deliver to : <b>{{x.firstName | titlecase}} {{x.lastName | titlecase}}</b> </p>
+        <p class="address">{{x.address1 | titlecase}}</p>
       </div>
       <div class="customer mt-1">
         <p class="fw-bold">Available Offers </p>

@@ -17,7 +17,8 @@ export class LoginComponent {
   constructor(
   
     private router: Router,
-    private seller:SellerService
+    private seller:SellerService,
+    private auth:AuthService,
   ) {}
 
   ngOnInit(): void {}
@@ -141,7 +142,8 @@ export class LoginComponent {
   
       if (count > 0) {
         this.loginSuccess = true;
-       
+        this.auth.setSellerLoggedInStatus(true);
+
   
         this.router.navigate(['/seller/sellerhome']);
         setTimeout(() => {

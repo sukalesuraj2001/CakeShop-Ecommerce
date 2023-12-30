@@ -26,7 +26,7 @@
 
     <div *ngIf="menuOption === 'profile'">
       <!-- Profile Content -->
-      <section style="background-color: #eee;">
+      <section >
         <div class="container ">
 
 
@@ -35,7 +35,7 @@
               <div class="card mb-4">
                 <div class="card-body text-center">
                   <img src="{{x.image}}" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
-                  <h5 class="my-3">{{x.firstName}} {{x.lastName}}</h5>
+                  <h5 class="my-3">{{x.firstName |titlecase}} {{x.lastName |titlecase}}</h5>
                   <!-- <p class="text-muted mb-1">Full Stack Developer</p>
                   <p class="text-muted mb-4">Bay Area, San Francisco, CA</p> -->
                   <div class="d-flex justify-content-center mb-2">
@@ -53,7 +53,7 @@
                       <p class="mb-0">Full Name</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0">{{x.firstName}} {{x.lastName}}</p>
+                      <p class="text-muted mb-0">{{x.firstName |titlecase}} {{x.lastName |titlecase}}</p>
                     </div>
                   </div>
                   <hr>

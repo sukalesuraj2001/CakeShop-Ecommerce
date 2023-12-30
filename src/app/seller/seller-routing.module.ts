@@ -8,12 +8,12 @@ import { SellerOrderComponent } from './seller-order/seller-order.component';
 import { CustomersComponent } from './customers/customers.component';
 
 const routes: Routes = [
-  {path:"sellerlogin",component:LoginComponent},
-  {path:"sellerhome",component:HomeComponent},
-  {path:"addproduct",component:AddProductsComponent},
-  {path:"totalproduct",component:TotalProductsComponent},
-  {path:"sellerorder",component:SellerOrderComponent},
-  {path:"customers",component:CustomersComponent},
+  {path:"sellerlogin",component:LoginComponent,title: 'SweetCakes | SllerLogin'},
+  {path:"sellerhome",component:HomeComponent,title: 'SweetCakes | SellerHome'},
+  {path:"addproduct",component:AddProductsComponent,title: 'SweetCakes | AddProduct'},
+  {path:"totalproduct",component:TotalProductsComponent,title: 'SweetCakes | TotalProduct'},
+  {path:"sellerorder",component:SellerOrderComponent,title: 'SweetCakes | Order'},
+  {path:"customers",component:CustomersComponent,title: 'SweetCakes | TotalCustomers'},
 ];
 
 @NgModule({

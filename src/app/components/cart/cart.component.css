@@ -3,7 +3,7 @@
 .example-button-row {
     display: flex;
     align-items: center;
-  
+ 
     margin-left: 30rem;
     margin-top: -2rem;
   }
@@ -22,10 +22,10 @@
   }
   
   .container-with-space {
-    margin-left: 300px;
+    margin-left: 20%;
     /* border: 2px solid black; */
     /* margin-right: 250px; */
-    width: 80%;
+    width: 70%;
   }
   
   .content {

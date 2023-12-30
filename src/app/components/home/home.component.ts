@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Category, Color, Flovour, Ocassion, Price, } from 'src/app/interfaces/category1';
 import { ColorService } from 'src/app/services/color.service';
-
-
 import { FirstCategoryService } from 'src/app/services/first-category.service';
 import { FlovoursService } from 'src/app/services/flovours.service';
 import { OcassionsService } from 'src/app/services/ocassions.service';
@@ -44,20 +42,10 @@ this.prices=res
 });
 this.colors.getColor().subscribe((res)=>{
   this.color=res
-})
-
-
-
-  
+}) 
  }
-
-
  categoryName(categoryId:number){
   this.router.navigate(['cakes',categoryId])
   
  }
-
-
- 
-
 }

@@ -1,0 +1,82 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer {
+    animation: fadeIn 0.5s ease;
+  }
+  
+
+  /* Style for the footer container */
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+  }
+  
+  /* Style for the footer content */
+  .footer h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Style for the quick links list */
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .footer ul li a:hover {
+    color: #ff5733; /* Change this color to your preferred hover color */
+  }
+  
+  /* Style for the contact information */
+  .footer address {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Style for the copyright notice */
+  .footer hr {
+    margin-top: 20px;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer p.copyright {
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Add animations if needed */
+  .footer {
+  }
+  .icon i:hover{
+     animation: fadeIn 0.5s ease;
+    /* transform: rotate3d(3, 0, 0, -0.4turn); */
+   }

@@ -129,14 +129,14 @@ export class CartComponent {
     const selectedItems = this.cartItems.filter(cartItem => cartItem.selected);
 
     if (selectedItems.length === 0) {
-      alert("Please select products in the cart before placing an order.");
+      Swal.fire("Please select products in the cart before placing an order.");
       return;
     }
 
     const orderID = Math.floor(1000 + Math.random() * 9000);
 
     const totalAmount = selectedItems.reduce((total, cartItem) => {
-      const totalItemPrice = cartItem.totalprice * cartItem.qty;
+      const totalItemPrice = cartItem.totalprice * cartItem.qty*cartItem.size;
       return total + totalItemPrice;
     }, 0);
 
@@ -172,8 +172,16 @@ export class CartComponent {
     };
 
     this.cart.orderProduct(orderData).subscribe(() => {
-      alert("Order placed successfully!");
-      this.router.navigate(['/']);
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: " Congradulations ! Order Place Successfully!",
+        showConfirmButton: false,
+        timer: 1500
+      });
+      setTimeout(() => {
+        this.router.navigate(['/'])
+      }, 2000);
     });
 
   }

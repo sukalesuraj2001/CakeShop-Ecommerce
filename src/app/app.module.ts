@@ -15,6 +15,11 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { OrderComponent } from './components/order/order.component'
 import { ToastrModule } from 'ngx-toastr';
 import { MapComponent } from './components/map/map.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { SearchPipe } from './components/search.pipe';
+import { SearchProductsComponent } from './components/search-products/search-products.component';
+import { RatingComponent } from './components/rating/rating.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { MapComponent } from './components/map/map.component';
     ProfileComponent,
     // WishlistComponent,
     OrderComponent,
-    MapComponent
+    MapComponent,
+    PagenotfoundComponent,
+    SearchPipe,
+    SearchProductsComponent,
+    RatingComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

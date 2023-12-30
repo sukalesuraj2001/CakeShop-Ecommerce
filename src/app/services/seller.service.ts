@@ -41,7 +41,7 @@ getSellerOrders() {
   return this.http.get(`${this.apiUrl}/Order`);
 }
 getAllUsers(): Observable<Profile[]> {
-  const x = localStorage.getItem('userId');
+  // const x = localStorage.getItem('userId');
   return this.http.get<Profile[]>(`${this.apiUrl}/Profile`);
 }
 

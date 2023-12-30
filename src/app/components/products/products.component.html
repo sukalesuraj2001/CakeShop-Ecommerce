@@ -93,28 +93,32 @@
     <h4 class="apperal ms-4">Apparel Items</h4>
 
 </div>
-<div class="container-fluid">
-    <div class="col-md-4 filter">
+<div class="container-fluid ">
+    <div class="col-md-4 filter shadow p-3 mb-5 bg-body-tertiary rounded">
         <div class="button">
             <p>FILTERS </p>
-            <p class="clear" (click)="clear()" >CLEAR ALL</p>
+            <p class="clear" (click)="clear()">CLEAR ALL</p>
         </div>
         <hr>
 
-        <div class="form-check mt-3 ms-3">
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="Same Day Delivery Cakes" (click)="chocolate('Same Day Delivery Cakes')">
+        <div class="form-check mt-3 ms-3 ">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="Same Day Delivery Cakes"
+                (click)="chocolate('Same Day Delivery Cakes')">
             <label class="form-check-label fw-medium" for="Same Day Delivery Cakes">
                 Same Day Delivery Cakes
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="Midnight Delivery Cakes" (click)="chocolate('Midnight Delivery Cakes')">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="Midnight Delivery Cakes"
+                (click)="chocolate('Midnight Delivery Cakes')">
             <label class="form-check-label fw-medium" for="Midnight Delivery Cakes">
                 Midnight Delivery Cakes
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="Best Seller Cakes" (click)="chocolate('Best Seller Cakes')">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="Best Seller Cakes"
+                (click)="chocolate('Best Seller Cakes')">
             <label class="form-check-label fw-medium" for="Best Seller Cakes">
                 Best Seller Cakes
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="Brand New Cakes"(click)="chocolate('Brand New Cakes')">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="Brand New Cakes"
+                (click)="chocolate('Brand New Cakes')">
             <label class="form-check-label fw-medium" for="Brand New Cakes">
                 Brand New Cakes
             </label>
@@ -126,34 +130,40 @@
             <label class="form-check-label fw-medium" for="ChocolateCake" (click)="chocolate('Chocolate Cake')">
                 Chocolate Cake
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="BlackForestCake" (click)="chocolate('Black Forest Cake')">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="BlackForestCake"
+                (click)="chocolate('Black Forest Cake')">
             <label class="form-check-label fw-medium" for="BlackForestCake">
                 Black Forest Cake
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="ButterscotchCakes" (click)="chocolate('Butterscotch Cakes')">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="ButterscotchCakes"
+                (click)="chocolate('Butterscotch Cakes')">
             <label class="form-check-label fw-medium" for="ButterscotchCakes">
                 Butterscotch Cakes
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="PineappleCakes" (click)="chocolate('Pineapple Cakes')">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="PineappleCakes"
+                (click)="chocolate('Pineapple Cakes')">
             <label class="form-check-label fw-medium" for="PineappleCakes">
                 Pineapple Cakes
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="VanilaCakes" (click)="chocolate('Vanila Cakes')">
-            <label class ="form-check-label fw-medium" for="VanilaCakes">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="VanilaCakes"
+                (click)="chocolate('Vanila Cakes')">
+            <label class="form-check-label fw-medium" for="VanilaCakes">
                 Vanila Cakes
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="FruitCakes" (click)="chocolate('Fruit Cakes')">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="FruitCakes"
+                (click)="chocolate('Fruit Cakes')">
             <label class="form-check-label fw-medium" for="FruitCakes">
                 Fruit Cakes
             </label><br>
-            <input class="form-check-input mt-1" type="radio" name="wearType" id="TruffleCakes" (click)="chocolate('Truffle Cakes')">
+            <input class="form-check-input mt-1" type="radio" name="wearType" id="TruffleCakes"
+                (click)="chocolate('Truffle Cakes')">
             <label class="form-check-label fw-medium" for="TruffleCakes">
                 Truffle Cakes
             </label>
         </div>
-        
+
         <hr>
-        <div class="form-check  mt-3">
+        <div class="form-check mx-3  mt-3">
             <p class=" price fw-medium">PRICE</p>
             <div class="under mt-3">
                 <input class="form-check-input mt-1" type="radio" name="wearType" id="300">
@@ -179,11 +189,12 @@
 
     <div class=" col-md-8 products">
         <!-- Product cards (repeat this block for each product) -->
-        <div class="product-card shadow-sm p-3 mb-5 bg-body-white rounded" *ngFor="let x of products">
+        <div class="product-card shadow-sm p-3 mb-5 bg-body-white rounded" *ngFor="let x of products ">
             <img (click)="productDetails(x.id)" [src]="x.images" alt="">
             <p class="name mt-2 ">{{x.productName}}</p>
             <p class="name mt-2 ">{{x.categoryName | titlecase}}</p>
             <p class="desc fw-bold">{{x.price | currency:"INR"}}</p>
+            <app-rating [rate]="x.rating"></app-rating>
 
         </div>
     </div>

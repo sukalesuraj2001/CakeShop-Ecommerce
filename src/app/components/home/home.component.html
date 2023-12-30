@@ -42,7 +42,7 @@
 <div class="container mt-5">
     <h3 class="text-center mt-5 mb-5">Cakes: Fresh & Flavourful </h3>
     <div class="row">
-        <div class="col-md-6" *ngFor="let x of data" >
+        <div class="col-md-6 my-2" *ngFor="let x of data" >
             <img (click)="categoryName(x.categoryId)" src="{{x.images}}"
                 class="img-fluid" >
         </div>
@@ -55,11 +55,11 @@
 
 <!-- Celebrate Special Occasions start -->
 
-<div class="container mt-3">
+<div class="container my-2 mt-3">
     <h2 class="text-center mt-5 mb-5">Celebrate Special Occasions</h2>
     <div class="row mt-4">
         <div class="col-md-6" *ngFor="let x of occasions">
-            <div class="image-zoom">
+            <div class="image-zoom my-2">
                 <img (click)="categoryName(x.categoryId)" src="{{x.images}}"
                     class="img-fluid" alt="...">
                 <p class="text-center">{{x.categoryName}}</p>

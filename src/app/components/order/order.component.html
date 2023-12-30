@@ -36,10 +36,12 @@
                                         <span>Unique design</span>
                                         <span class="text-primary"> • </span>
                                        <p> Category: <span class="fw-medium"> {{ order.selectedItems[0].categoryName }}</span></p>
+                                       <!-- <app-rating [rate]="order.selectedItems[0].rating"></app-rating> -->
                                         <p class="mb-0">Expected Arrival: <span
                                             class="fw-bold text-success">{{order.selectedItems[0].date | date: 'EEEE, MMMM d,
                                             y'}}</span></p>
                                     </div>
+
                                     <p class="text-truncate mb-4 mb-md-0">
                                         {{ order.selectedItems[0].description }}
                                     </p>

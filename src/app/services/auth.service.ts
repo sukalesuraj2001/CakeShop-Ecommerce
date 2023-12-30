@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Login, Register } from '../interfaces/category1';
 import { Profile } from '../interfaces/profileData';
 
@@ -9,7 +9,10 @@ import { Profile } from '../interfaces/profileData';
 })
 export class AuthService {
   private apiUrl = 'http://localhost:3000';
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    const sellerId = localStorage.getItem('sellerId');
+    this.isSellerLoggedInSubject.next(!!sellerId);
+  }
   // user login and registration Api start
 
   userRegister(userData: Register): Observable<Register> {
@@ -39,4 +42,21 @@ export class AuthService {
     return this.http.put<Profile>(`${this.apiUrl}/profile/${userId}`, profileData);
   }
    // userProfile end
+
+
+
+
+
+
+
+  //  login and logout functionality
+
+
+  private isSellerLoggedInSubject = new BehaviorSubject<boolean>(false);
+  isSellerLoggedIn$ = this.isSellerLoggedInSubject.asObservable();
+
+
+  setSellerLoggedInStatus(isLoggedIn: boolean) {
+    this.isSellerLoggedInSubject.next(isLoggedIn);
+  }
 }

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 my-3" *ngFor="let x of products | search:searchKey:'productName'">
+            <div class="card" style="width: 15rem;">
+                <img src="{{x.images}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{x.productName}}</h5>
+                  <p class="card-text">Category:{{x.categoryName}}</p>
+                  <p class="card-text"> Price: <b>{{x.price | currency:"INR"}}</b></p>
+                  <a (click)="seeMore(x.categoryId)" class="btn btn-primary">See more</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

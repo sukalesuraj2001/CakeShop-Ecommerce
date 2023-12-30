@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Cart, Product } from '../interfaces/category1';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Order } from '../interfaces/order';
 
 @Injectable({
@@ -50,5 +50,20 @@ wishlist():Observable<Product>{
   const x=localStorage.getItem('userId')
     return this.http.get<Product>(`${this.apiUrl}/Wishlist?userId=${x}`);
 }
+
+
+
+
+
+
+// cart count
+
+
+private cartItemCountSubject = new BehaviorSubject<number>(0);
+  cartItemCount$ = this.cartItemCountSubject.asObservable();
+
+  updateCartItemCount(count: number) {
+    this.cartItemCountSubject.next(count);
+  }
 
 }
